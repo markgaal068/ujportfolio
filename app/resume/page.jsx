@@ -11,7 +11,7 @@ import {
 
 const about = {
     title: 'Magamról',
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore soluta nam omnis error voluptatum labore quod, suscipit nemo? Adipisci, commodi.",
+    description: "Egy rövid információáradat, hogy jobban megismerjen.",
     info: [
         {
             fieldName: "Név",
@@ -32,7 +32,7 @@ const about = {
         {
             fieldName: "Állampolgárság",
             fieldValue: "Magyar"
-        },        
+        },
         {
             fieldName: "Email",
             fieldValue: "gaalmark.markit@gmail.com"
@@ -53,32 +53,32 @@ const about = {
 const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'Szakmai tapasztalat',
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore soluta nam omnis error voluptatum labore quod, suscipit nemo? Adipisci, commodi.",
+    description: "Szakmai tapasztalataim bemutatása, kiemelve a különböző pozíciókat és az iparágakat, ahol dolgoztam. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
-            company: "cégnév",
-            position: "pozíció",
-            duration: "duráció"
+            company: "Stäubli Robotics",
+            position: "Business developer",
+            duration: "2024"
         },
         {
-            company: "cégnév",
-            position: "pozíció",
-            duration: "duráció"
+            company: " Mobilis ",
+            position: "Demonstrátor",
+            duration: "2022-2023"
         },
         {
-            company: "cégnév",
-            position: "pozíció",
-            duration: "duráció"
+            company: "MetMax Europe ",
+            position: "Diák munkatárs",
+            duration: "2022"
         },
         {
-            company: "cégnév",
-            position: "pozíció",
-            duration: "duráció"
+            company: "McDonald’s Corp",
+            position: "Éttermi munkatárs",
+            duration: "2017-2022"
         },
         {
-            company: "cégnév",
-            position: "pozíció",
-            duration: "duráció"
+            company: "Freelancer",
+            position: "EV.",
+            duration: "2021-"
         },
     ]
 }
@@ -88,27 +88,32 @@ const experience = {
 const education = {
     icon: '/assets/resume/cap.svg',
     title: 'Végzettségek, tanulmányok',
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore soluta nam omnis error voluptatum labore quod, suscipit nemo? Adipisci, commodi.",
+    description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
-            institution: "iskolanév",
-            degree: "tanulmány megnevezáse",
-            duration: "duráció"
+            institution: "Széchenyi István Egyetem",
+            degree: "Mérnökinformatika bsc.",
+            duration: "2021 - "
         },
         {
-            institution: "iskolanév",
-            degree: "tanulmány megnevezáse",
-            duration: "duráció"
+            institution: "Testnevelési Egyetem",
+            degree: "Kézilabda edző (D licence)",
+            duration: "2024 -"
         },
         {
-            institution: "iskolanév",
-            degree: "tanulmány megnevezáse",
-            duration: "duráció"
+            institution: "GYSZC Jedlik Ányos Technikum",
+            degree: "CAD-CAM Informatikus",
+            duration: "2021 - 2022"
         },
         {
-            institution: "iskolanév",
-            degree: "tanulmány megnevezáse",
-            duration: "duráció"
+            institution: "GYSZC Jedlik Ányos Technikum",
+            degree: "Érettségi",
+            duration: "2017 - 2021"
+        },
+        {
+            institution: "Kézilabda szövetség",
+            degree: "Játékvezető",
+            duration: "2019"
         },
     ]
 }
@@ -117,7 +122,7 @@ const education = {
 
 const skills = {
     title: "Készségek",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore soluta nam omnis error voluptatum labore quod, suscipit nemo? Adipisci, commodi.",
+    description: "Általam leginkább ismert, és hasnználatos programozási nyelvek.",
     skilllist: [
         {
             icon: <FaHtml5 />,
@@ -238,7 +243,7 @@ const Resume = () => {
                                 <p className="nax-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                             </div>
                             <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                                {skills.skilllist.map((skill, index)=>{
+                                {skills.skilllist.map((skill, index) => {
                                     return <li key={index}>
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
@@ -264,7 +269,7 @@ const Resume = () => {
                             <h3 className="text-4xl font-bold">{about.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                             <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                                {about.info.map((item, index)=>{
+                                {about.info.map((item, index) => {
                                     return <li className="flex items-center justify-center xl:justify-start gap-4" key={index}>
                                         <span className="text-white/60">{item.fieldName}</span>
                                         <span className="text-xl">{item.fieldValue}</span>
