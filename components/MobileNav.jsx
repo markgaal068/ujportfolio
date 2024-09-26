@@ -11,8 +11,8 @@ const links = [
         path: "/",
     },
     {
-        name: 'szolgáltatások',
-        path: "/services",
+        name: 'Díjszabás',
+        path: "/prices",
     },
     {
         name: 'önéletrajz',
