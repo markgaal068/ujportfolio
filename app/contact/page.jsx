@@ -132,7 +132,8 @@ const Contact = () => {
         };
     
         try {
-            const response = await axios.post('http://localhost:5000/send-email', data);
+            // Update this line with your Glitch URL
+            const response = await axios.post('https://airy-lace-tumble.glitch.me/', data);
             alert(response.data); // Handle success
         } catch (error) {
             console.error("Error details:", error); // Log the error details
