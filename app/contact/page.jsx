@@ -132,7 +132,7 @@ const Contact = () => {
         };
     
         try {
-            const response = await axios.post('https://tested-frequent-umbra.glitch.me', data);
+            const response = await axios.post('https://tested-frequent-umbra.glitch.me/send-email', data);
             alert(response.data); // Handle success
         } catch (error) {
             console.error("Error details:", error);
