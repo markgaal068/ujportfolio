@@ -132,15 +132,14 @@ const Contact = () => {
         };
     
         try {
-            // Update this line with your Glitch URL
-            const response = await axios.post('https://airy-lace-tumble.glitch.me/', data);
+            const response = await axios.post('http://localhost:5000/send-email', data);
             alert(response.data); // Handle success
         } catch (error) {
-            console.error("Error details:", error); // Log the error details
+            console.error("Error details:", error);
             alert('Error sending email: ' + error.message); // Show user-friendly error message
         }
     };
-
+    
     return (
         <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }} className="py-6">
             <div className="container mx-auto">
