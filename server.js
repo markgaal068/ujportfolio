@@ -18,9 +18,9 @@ app.post('/send-email', (req, res) => {
     };
 
     sendEmail(mailOptions)
-        .then(() => res.status(200).send('Email sent'))
+        .then(() => res.status(200).send('Sikeres e-mail küldés!'))
         .catch((error) => {
-            console.error('Error sending email:', error);
+            console.error('Oops! Próbálja újra később:', error);
             res.status(500).send(error.toString());
         });
 });
