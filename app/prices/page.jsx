@@ -18,7 +18,7 @@ const services = [
     },
     {
         num: "03",
-        title: "CAD-CAM",
+        title: "Modellezés (CAD)",
         description: "3D modellezés áraival kapcsolatos részletek.",
     },
     {
