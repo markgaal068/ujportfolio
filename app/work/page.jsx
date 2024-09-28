@@ -35,10 +35,10 @@ const projects = [
     },
     {
         num: '03',
-        category: 'frontend',
-        title: 'project 3',
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quia!",
-        stack: [{ name: "Angular.js" }, { name: "Tailwind.css" }],
+        category: 'Modellezés',
+        title: 'cadcam',
+        description: "3D-ben lemodellezem amit kell, műszaki ábrákat ellenőrzök.",
+        stack: [{ name: "Inventor" }],
         image: '/assets/work/thumb3.jpg',
         live: "",
         github: "",
@@ -66,7 +66,7 @@ const Work = () => {
                             </div>
 
                             {/* project category */}
-                            <h2 className="text-[42px] font-bold leading-none text-white group hover:text-accent transition-all duration-500 capitalize">{project.category} projekt</h2>
+                            <h2 className="text-[42px] font-bold leading-none text-white group hover:text-accent transition-all duration-500 capitalize">{project.category}</h2>
 
                             {/* project desc */}
                             <p className="text-white/60">{project.description}</p>
