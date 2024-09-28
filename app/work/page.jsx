@@ -84,7 +84,7 @@ const Work = () => {
                             {/* buttons */}
                             <div className="flex items-center gap-4">
                                 {/* Live projekt button */}
-                                <Link href="{project.live}">
+                                <a href="{project.live}">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -95,10 +95,10 @@ const Work = () => {
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </Link>
+                                </a>
 
                                 {/* Github projekt button */}
-                                <Link href="{project.github}">
+                                <a href="{project.github}">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -109,7 +109,7 @@ const Work = () => {
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>
