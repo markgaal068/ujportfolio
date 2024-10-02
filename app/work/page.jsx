@@ -39,7 +39,7 @@ const projects = [
         title: 'cadcam',
         description: "3D-ben lemodellezem amit kell, műszaki ábrákat ellenőrzök.",
         stack: [{ name: "Inventor" }],
-        image: '/assets/work/thumb3.jpg',
+        image: '/assets/work/thumb3.png',
         live: "",
         github: "",
     },
