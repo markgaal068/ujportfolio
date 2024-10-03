@@ -17,13 +17,13 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: '01',
-        category: 'Webfejlesztés',
-        title: 'EKRAFOTO.HU',
-        description: "Egy fényképész portfólió weboldala, mely első projektemként készült",
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+        category: 'Ácsi Kinizsi SC.',
+        title: 'Szakdolgozat',
+        description: "Szakdolgozatom projektje",
+        stack: [{ name: "Next.Js" }, { name: "Node.Js" }, { name: "MongoDB" }],
         image: "/assets/work/thumb1.png",
-        live: "https://www.ekrafoto.hu/",
-        github: "https://github.com/markgaal068/ekrafoto",
+        live: "https://szakdolgozat-theta.vercel.app/",
+        github: "https://github.com/markgaal068/SZAKDOLGOZAT/",
     },
     {
         num: '02',
