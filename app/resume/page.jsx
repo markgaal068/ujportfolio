@@ -10,8 +10,7 @@ import {
 //ALAPADATOK
 
 const about = {
-    title: 'Magamról',
-    description: "Egy rövid információáradat, hogy jobban megismerjen.",
+    title: 'Magamról'
 }
 
 //TAPASZTALATOK ISMERETEK
@@ -37,14 +36,14 @@ const experience = {
             duration: "2022"
         },
         {
-            company: "McDonald’s Corp",
-            position: "Éttermi munkatárs",
-            duration: "2017-2022"
-        },
-        {
             company: "Freelancer",
             position: "EV.",
             duration: "2021-"
+        },
+        {
+            company: "McDonald’s Corp",
+            position: "Éttermi munkatárs",
+            duration: "2017-2022"
         },
     ]
 }
@@ -57,14 +56,14 @@ const education = {
     description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
-            institution: "Széchenyi István Egyetem",
-            degree: "Mérnökinformatika bsc.",
-            duration: "2021 - "
-        },
-        {
             institution: "Testnevelési Egyetem",
             degree: "Kézilabda edző (D licence)",
             duration: "2024 -"
+        },
+        {
+            institution: "Széchenyi István Egyetem",
+            degree: "Mérnökinformatika bsc.",
+            duration: "2021 - "
         },
         {
             institution: "GYSZC Jedlik Ányos Technikum",
@@ -72,14 +71,14 @@ const education = {
             duration: "2021 - 2022"
         },
         {
-            institution: "GYSZC Jedlik Ányos Technikum",
-            degree: "Érettségi",
-            duration: "2017 - 2021"
-        },
-        {
             institution: "Kézilabda szövetség",
             degree: "Játékvezető",
             duration: "2019"
+        },
+        {
+            institution: "GYSZC Jedlik Ányos Technikum",
+            degree: "Érettségi",
+            duration: "2017 - 2021"
         },
     ]
 }
@@ -92,35 +91,43 @@ const skills = {
     skilllist: [
         {
             icon: <FaHtml5 />,
-            name: "html 5 - 5⭐",
+            name: "html 5",
+            desc: "A weboldalak felépítéséért felelős jelölőnyelv. Az ötödik verzió új lehetőségeket kínál a multimédiás tartalmak kezelésére, és nagy hangsúlyt fektet a reszponzív dizájnra és a mobilbarát oldalak kialakítására.",
         },
         {
             icon: <FaCss3 />,
-            name: "css 3 - 5⭐",
+            name: "css 3",
+            desc: "A weboldalak stílusának, megjelenésének formázására szolgál. A harmadik verzió újításai közé tartoznak a rugalmas elrendezések, animációk, és az átmenetek, melyek dinamikusabbá teszik a webes élményt.",
         },
         {
             icon: <FaJs />,
-            name: "javascript - 4⭐",
+            name: "javascript",
+            desc: "Egy népszerű programozási nyelv, amelyet interaktív és dinamikus weboldalak készítéséhez használnak. Képes kezelni az eseményeket, kommunikálni a szerverrel, és frissíteni az oldalak tartalmát anélkül, hogy újratöltenék azokat.",
         },
         {
             icon: <FaReact />,
-            name: "react.js - 4⭐",
+            name: "react.js",
+            desc: "Egy nyílt forráskódú JavaScript könyvtár, amelyet főként felhasználói felületek (UI) készítéséhez használnak. A komponensalapú struktúra lehetővé teszi a kód újrafelhasználását és a hatékony alkalmazásfejlesztést.",
         },
         {
             icon: <SiNextdotjs />,
-            name: "next.js - 4⭐",
+            name: "next.js",
+            desc: "Egy React alapú keretrendszer, amely egyszerűsíti a szerveroldali renderelést és a statikus weboldalak készítését. Különösen népszerű az optimalizált teljesítmény és a SEO-barát felépítése miatt.",
         },
         {
             icon: <SiTailwindcss />,
-            name: "tailwind.css - 4⭐",
+            name: "tailwind.css",
+            desc: "Egy utilitarista CSS keretrendszer, amely gyors, moduláris stílusok létrehozását teszi lehetővé. Az osztályok használatával minimális CSS kódolás szükséges, és könnyen testre szabható megjelenéseket biztosít.",
         },
         {
             icon: <FaNodeJs />,
-            name: "node.js - ⏳",
+            name: "node.js",
+            desc: "Egy szerveroldali JavaScript környezet, amely lehetővé teszi a nagy teljesítményű, skálázható webes alkalmazások építését. Különösen hatékony I/O-intenzív alkalmazásoknál.",
         },
         {
             icon: <FaFigma />,
-            name: "figma - 3⭐",
+            name: "figma",
+            desc: "Egy online tervezőeszköz, amely lehetővé teszi a kollaboratív webes és mobilos felhasználói felületek tervezését. Különösen népszerű a csapatmunka és a prototípus-készítés miatt.",
         },
     ]
 }
@@ -215,9 +222,10 @@ const Resume = () => {
                                             <Tooltip>
                                                 <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
                                                     <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                                                    <p className="capitalize">{skill.name}</p>
                                                 </TooltipTrigger>
                                                 <TooltipContent>
-                                                    <p className="capitalize">{skill.name}</p>
+                                                {skill.desc}
                                                 </TooltipContent>
                                             </Tooltip>
                                         </TooltipProvider>
