@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaDiscord } from 'react-icons/fa'
 import { motion } from "framer-motion"
 import axios from 'axios';
 
 const info = [
     {
-        icon: <FaPhoneAlt />,
-        title: 'Telefon',
-        description: "(+36) 30 419 9942",
+        icon: <FaDiscord />,
+        title: 'Discord',
+        description: "markgaal068",
     },
     {
         icon: <FaEnvelope />,

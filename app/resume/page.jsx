@@ -12,40 +12,6 @@ import {
 const about = {
     title: 'Magamról',
     description: "Egy rövid információáradat, hogy jobban megismerjen.",
-    info: [
-        {
-            fieldName: "Név",
-            fieldValue: "Gaál Márk"
-        },
-        {
-            fieldName: "Telefon",
-            fieldValue: "(+36) 30 419 9942"
-        },
-        {
-            fieldName: "Tapasztalat",
-            fieldValue: "3+ év"
-        },
-        {
-            fieldName: "Discord",
-            fieldValue: "markgaal068"
-        },
-        {
-            fieldName: "Állampolgárság",
-            fieldValue: "Magyar"
-        },
-        {
-            fieldName: "Email",
-            fieldValue: "gaalmark.markit@gmail.com"
-        },
-        {
-            fieldName: "Freelance",
-            fieldValue: "Elérhető"
-        },
-        {
-            fieldName: "Nyelvismeret",
-            fieldValue: "Angol, Német"
-        },
-    ]
 }
 
 //TAPASZTALATOK ISMERETEK
@@ -122,7 +88,7 @@ const education = {
 
 const skills = {
     title: "Készségek",
-    description: "Általam leginkább ismert, és hasnználatos programozási nyelvek.",
+    description: "Általam leginkább ismert, és használatos programozási nyelvek.",
     skilllist: [
         {
             icon: <FaHtml5 />,
@@ -268,14 +234,10 @@ const Resume = () => {
                         <div className="flex flex-col gap-[30px]">
                             <h3 className="text-4xl font-bold">{about.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                            <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                                {about.info.map((item, index) => {
-                                    return <li className="flex items-center justify-center xl:justify-start gap-4" key={index}>
-                                        <span className="text-white/60">{item.fieldName}</span>
-                                        <span className="text-xl">{item.fieldValue}</span>
-                                    </li>
-                                })}
-                            </ul>
+                            <div>
+                                <h3 className="text-4xl font-bold justify-left">Szia, üdvözöllek!</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, járom az utama. Matematika korrepetációval egyetem óta foglalkozok komolyan szinten, hisz ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.</p>
+                            </div>
                         </div>
                     </TabsContent>
                 </div>

@@ -27,7 +27,7 @@ const Home = () => {
             <span className="text-xl">Freelancer</span>
             <h1 className="h1 mb-6">Gaál <span className="text-accent">Márk</span></h1>
             <p className="max-w-[500px] mb-9 text-white/80 text-justified">
-              A tudás átadása nem csupán információk megosztása, hanem a jövő formálása is – minden kód, amit tanítok, egy új lehetőség a világ jobbá tételére
+              A tudás átadása nem csupán információk megosztása, hanem a jövő formálása is – minden kód, amit tanítok, egy új lehetőség a világ jobbá tételére.
             </p>
 
             {/* gomb és social */}
