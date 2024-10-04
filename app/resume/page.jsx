@@ -221,10 +221,11 @@ const Resume = () => {
                                         <TooltipProvider delayDuration={100}>
                                             <Tooltip>
                                                 <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                                    <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                                                
+                                                    <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon} <br /></div>
                                                     <p className="capitalize">{skill.name}</p>
                                                 </TooltipTrigger>
-                                                <TooltipContent>
+                                                <TooltipContent className="w-auto h-auto">
                                                 {skill.desc}
                                                 </TooltipContent>
                                             </Tooltip>
@@ -244,7 +245,7 @@ const Resume = () => {
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                             <div>
                                 <h3 className="text-2xl font-bold justify-normal">Szia, üdvözöllek!</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, járom az utama. Matematika korrepetációval egyetem óta foglalkozok komolyan szinten, hisz ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.</p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, szerzek új ismereteket. Matematika korrepetációval egyetem óta foglalkozok komolyabb szinten, mivel ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.</p>
                             </div>
                         </div>
                     </TabsContent>
