@@ -9,22 +9,22 @@ const services = [
     {
         num: "01",
         title: "Webfejlesztés",
-        // description: "Webfejlesztés áraival kapcsolatos részletek.",
+        description: "Webfejlesztés áraival kapcsolatos részletek.",
     },
     {
         num: "02",
         title: "Korrepetálás",
-        // description: "Korrepetálás áraival kapcsolatos részletek.",
+        description: "Korrepetálás áraival kapcsolatos részletek.",
     },
     {
         num: "03",
         title: "Modellezés (CAD)",
-        // description: "3D modellezés áraival kapcsolatos részletek.",
+        description: "3D modellezés áraival kapcsolatos részletek.",
     },
     {
         num: "04",
         title: "HAMAROSAN...",
-        // description: "HAMAROSAN...",
+        description: "HAMAROSAN...",
     },
 ];
 
@@ -44,37 +44,40 @@ const Services = () => {
                     className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
                 >
                     {services.map((service, index) => (
-                        <button
-                            key={index} // A `key` prop a button-hez került
-                            onClick={() => toggleDropdown(index)}
-                            className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                        // Hozzáadjuk az onClick eseményt az egész `div`-hez
+                        <div
+                            key={index}
+                            className="flex-1 flex flex-col justify-center gap-6 group cursor-pointer"
+                            onClick={() => toggleDropdown(index)} // Teljes elem kattintására hívódik meg a toggleDropdown
                         >
-                            <div className="flex-1 flex flex-col justify-center gap-6 group">
-                                <div className="w-full flex justify-between items-center">
-                                    <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
-                                        {service.num}
-                                    </div>
-
+                            <div className="w-full flex justify-between items-center">
+                                <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                                    {service.num}
+                                </div>
+                                <div
+                                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                                >
                                     <BsArrowDownRight className="text-primary text-3xl" />
                                 </div>
-                                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
-                                    {service.title}
-                                </h2>
-                                <div className="border-b border-white/20 w-full"></div>
-                                {/* A legördülő ablak tartálya */}
-                                <motion.div
-                                    initial={{ opacity: 0, height: 0 }}
-                                    animate={{ opacity: openIndex === index ? 1 : 0, height: openIndex === index ? "auto" : 0 }}
-                                    transition={{ duration: 0.4 }}
-                                    className="overflow-hidden"
-                                >
-                                    {/* Állandó térfogat */}
-                                    <div style={{ padding: openIndex === index ? "10px" : "0", transition: "padding 0.4s ease" }}>
-                                        <ServiceDetails description={service.description} />
-                                    </div>
-                                </motion.div>
                             </div>
-                        </button>
+                            <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+                                {service.title}
+                            </h2>
+                            <p className="text-white/60">{service.description}</p>
+                            <div className="border-b border-white/20 w-full"></div>
+                            {/* A legördülő ablak tartálya */}
+                            <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: openIndex === index ? 1 : 0, height: openIndex === index ? "auto" : 0 }}
+                                transition={{ duration: 0.4 }}
+                                className="overflow-hidden"
+                            >
+                                {/* Állandó térfogat */}
+                                <div style={{ padding: openIndex === index ? "10px" : "0", transition: "padding 0.4s ease" }}>
+                                    <ServiceDetails serviceIndex={index} />
+                                </div>
+                            </motion.div>
+                        </div>
                     ))}
                 </motion.div>
             </div>

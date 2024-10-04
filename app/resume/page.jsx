@@ -235,7 +235,7 @@ const Resume = () => {
                             <h3 className="text-4xl font-bold">{about.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
                             <div>
-                                <h3 className="text-4xl font-bold justify-left">Szia, üdvözöllek!</h3>
+                                <h3 className="text-2xl font-bold justify-normal">Szia, üdvözöllek!</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, járom az utama. Matematika korrepetációval egyetem óta foglalkozok komolyan szinten, hisz ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.</p>
                             </div>
                         </div>
