@@ -226,7 +226,7 @@ const Resume = () => {
                                                         <p className="capitalize">{skill.name}</p>
                                                     </div>
                                                 </TooltipTrigger>
-                                                <div className="w-[600px]">
+                                                <div className="w-1/3">
                                                     <TooltipContent>
                                                         {skill.desc}
                                                     </TooltipContent>
