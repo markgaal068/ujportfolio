@@ -1,6 +1,6 @@
 "use client";
 
-import { BsArrowDownRight } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import ServiceDetails from "@/components/ServiceDetails"; // Importáljuk a dinamikus leírási komponenst
@@ -55,9 +55,11 @@ const Services = () => {
                                     {service.num}
                                 </div>
                                 <div
-                                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                                    className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center"
                                 >
-                                    <BsArrowDownRight className="text-primary text-3xl" />
+                                    <BsArrowRight
+                                        className="text-primary text-3xl transition-transform duration-500 group-hover:rotate-45"
+                                    />
                                 </div>
                             </div>
                             <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
