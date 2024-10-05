@@ -156,8 +156,8 @@ const ServiceDetails = ({ serviceIndex }) => {
         case 3:
             return (
                 <div className="bg-primary border border-accent text-white p-4 mt-4 rounded-lg shadow-lg">
-                    <h3 className="font-bold text-lg">HAMAROSAN...</h3>
-                    <p>HAMAROSAN...</p>
+                    <h3 className="font-bold text-lg">Személyi Edzés</h3>
+                    <p>Igénybe vehető: 2025 májusától.</p>
                 </div>
             );
         default:

@@ -23,8 +23,8 @@ const services = [
     },
     {
         num: "04",
-        title: "HAMAROSAN...",
-        description: "HAMAROSAN...",
+        title: "Személyi Edzés",
+        description: "Hamarosan...",
     },
 ];
 
