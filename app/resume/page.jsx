@@ -222,13 +222,15 @@ const Resume = () => {
                                             <Tooltip>
                                                 <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
                                                     <div className="grid grid-cols-1">
-                                                    <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon} </div>
-                                                    <p className="capitalize">{skill.name}</p>
+                                                        <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon} </div>
+                                                        <p className="capitalize">{skill.name}</p>
                                                     </div>
                                                 </TooltipTrigger>
-                                                <TooltipContent>
-                                                    <p className="w-full h-full">{skill.desc}</p>
-                                                </TooltipContent>
+                                                <div className="w-[600px]">
+                                                    <TooltipContent>
+                                                        {skill.desc}
+                                                    </TooltipContent>
+                                                </div>
                                             </Tooltip>
                                         </TooltipProvider>
                                     </li>
