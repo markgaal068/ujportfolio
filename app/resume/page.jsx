@@ -215,20 +215,20 @@ const Resume = () => {
                                 <h3 className="text-4xl font-bold">{skills.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                             </div>
-                            <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
                                 {skills.skilllist.map((skill, index) => {
                                     return (
                                         <li key={index}>
                                             <TooltipProvider delayDuration={100}>
                                                 <Tooltip>
-                                                    <TooltipTrigger className="relative w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                                        <div className="grid grid-cols-1">
-                                                            <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
-                                                            <p className="capitalize">{skill.name}</p>
+                                                    <TooltipTrigger className="relative w-full h-[100px] sm:h-[120px] lg:h-[130px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                                        <div className="flex flex-col items-center">
+                                                            <div className="text-5xl lg:text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
+                                                            <p className="capitalize text-sm lg:text-base">{skill.name}</p>
                                                         </div>
                                                     </TooltipTrigger>
                                                     <TooltipContent
-                                                        className="absolute bottom-full mb-2 w-auto p-2 bg-gray-800 text-white rounded-md shadow-lg z-50"
+                                                        className="absolute bottom-full mb-2 w-[600px] p-2 bg-primary text-accent rounded-md border-accent shadow-lg z-50"
                                                         style={{ left: "50%", transform: "translateX(-50%)" }}
                                                     >
                                                         {skill.desc}
@@ -245,17 +245,21 @@ const Resume = () => {
 
 
 
+
                     {/* MAGAMRÓL */}
                     <TabsContent value="Magamról" className="w-full text-center xl:text-left">
                         <div className="flex flex-col gap-[30px]">
                             <h3 className="text-4xl font-bold">{about.title}</h3>
-                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{about.description}</p>
                             <div>
                                 <h3 className="text-2xl font-bold justify-normal">Szia, üdvözöllek!</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, szerzek új ismereteket. Matematika korrepetációval egyetem óta foglalkozok komolyabb szinten, mivel ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.</p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                                    Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, szerzek új ismereteket. Matematika korrepetációval egyetem óta foglalkozok komolyabb szinten, mivel ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.
+                                </p>
                             </div>
                         </div>
                     </TabsContent>
+
                 </div>
 
             </Tabs>
