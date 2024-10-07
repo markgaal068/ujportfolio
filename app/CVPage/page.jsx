@@ -19,7 +19,7 @@ const CVPage = () => {
         {/* Hungarian CV */}
         <div 
           className="bg-[#27272c] rounded border border-accent text-white p-8 rounded-lg flex flex-col items-center justify-center gap-4 hover:bg-accent transition-all duration-300 cursor-pointer"
-          onClick={() => handleDownload("/Gaal_mark_Oneletrajz.pdf", "Gaal_mark_Oneletrajz.pdf")}
+          onClick={() => handleDownload("/Gaal_Mark_Oneletrajz.pdf", "Gaal_Mark_Oneletrajz.pdf")}
         >
           <h2 className="text-2xl font-bold">Magyar CV</h2>
           <FiDownload className="text-3xl" />
