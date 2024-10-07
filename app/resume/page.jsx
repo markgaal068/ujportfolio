@@ -53,7 +53,7 @@ const experience = {
 const education = {
     icon: '/assets/resume/cap.svg',
     title: 'Végzettségek, tanulmányok',
-    description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletesn önéletrajzomban.",
+    description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletes önéletrajzomban.",
     items: [
         {
             institution: "Testnevelési Egyetem",
