@@ -22,7 +22,7 @@ const projects = [
         description: "Szakdolgozatom projektje",
         stack: [{ name: "Next.Js" }, { name: "Node.Js" }, { name: "MongoDB" }],
         image: "/assets/work/thumb1.png",
-        live: "https://szakdolgozat-theta.vercel.app/",
+        live: "https://szakdolgozat-psi.vercel.app/",
         github: "https://github.com/markgaal068/SZAKDOLGOZAT/",
     },
     {
