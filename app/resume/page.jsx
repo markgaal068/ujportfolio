@@ -56,13 +56,18 @@ const education = {
     description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletes önéletrajzomban.",
     items: [
         {
+            institution: "GYSZC Jedlik Ányos Technikum",
+            degree: "PLC Programozó",
+            duration: "2024 -"
+        },
+        {
             institution: "Testnevelési Egyetem",
             degree: "Kézilabda edző (D licence)",
             duration: "2024 -"
         },
         {
             institution: "Széchenyi István Egyetem",
-            degree: "Mérnökinformatika bsc.",
+            degree: "Mérnökinformatika Bsc.",
             duration: "2021 - "
         },
         {
