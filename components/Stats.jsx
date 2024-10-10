@@ -16,7 +16,7 @@ const stats = [
         text: "Oktatott diák"
     },
     {
-        num: 506,
+        num: 511,
         text: "Megtartott óra"
     }
 ]
