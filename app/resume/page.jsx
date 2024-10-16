@@ -21,6 +21,11 @@ const experience = {
     description: "Szakmai tapasztalataim bemutatása, kiemelve a különböző pozíciókat és az iparágakat, ahol dolgoztam. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
+            company: "Tanszéki Demonstrátor",
+            position: "Széchenyi István Egyetem",
+            duration: "2024-Present "
+        },
+        {
             company: "Stäubli Robotics",
             position: "Business developer",
             duration: "2024"
@@ -38,7 +43,7 @@ const experience = {
         {
             company: "Freelancer",
             position: "EV.",
-            duration: "2021-"
+            duration: "2021-Present"
         },
         {
             company: "McDonald’s Corp",
