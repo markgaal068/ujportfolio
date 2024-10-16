@@ -21,7 +21,7 @@ const experience = {
     description: "Szakmai tapasztalataim bemutatása, kiemelve a különböző pozíciókat és az iparágakat, ahol dolgoztam. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
-            company: "SZE - Informatika tanszék",
+            company: "Széchenyi István Egyetem",
             position: "Tanszéki Demonstrátor",
             duration: "2024-Present "
         },
