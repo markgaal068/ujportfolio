@@ -37,13 +37,12 @@ const projects = [
     },
     {
         num: '03',
-        category: 'Smile Nyelviskola',
-        title: 'Hamarosan',
-        description: "Hamarosan",
-        stack: [{ name: "Next.Js, Node.Js, MongoDB" }],
+        category: 'Python Projekt',
+        title: 'Árfolyam-követő',
+        description: "Valuta- és Kriptopénz árfolyam-követő, automatizált program",
+        stack: [{ name: "Python" }],
         image: '/assets/work/thumb3.png',
-        live: "",
-        github: "",
+        github: "https://github.com/markgaal068/Currency-Tracker-Python",
     },
 ];
 
