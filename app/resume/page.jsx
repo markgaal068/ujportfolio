@@ -22,7 +22,7 @@ const experience = {
     items: [
         {
             company: "Széchenyi István Egyetem",
-            position: "Tanszéki Demonstrátor",
+            position: "Külsős szakértő",
             duration: "2024-Present "
         },
         {

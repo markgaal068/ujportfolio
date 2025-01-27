@@ -4,19 +4,19 @@ import CountUp from "react-countup"
 
 const stats = [
     {
-        num: 3,
+        num: 4,
         text: "Év tapasztalat"
     },
     {
-        num: 9,
+        num: 11,
         text: "Elkészített projekt"
     },
     {
-        num: 17,
+        num: 19,
         text: "Oktatott diák"
     },
     {
-        num: 511,
+        num: 603,
         text: "Megtartott óra"
     }
 ]
