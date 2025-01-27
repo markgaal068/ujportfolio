@@ -1,6 +1,7 @@
 "use client"
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa"
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaAngular, FaPython } from "react-icons/fa"
+import { TbBrandCSharp, TbBrandCpp } from "react-icons/tb";
 
 import {
     SiTailwindcss, SiNextdotjs
@@ -139,6 +140,26 @@ const skills = {
             name: "figma",
             desc: "Egy online tervezőeszköz, amely lehetővé teszi a kollaboratív webes és mobilos felhasználói felületek tervezését. Különösen népszerű a csapatmunka és a prototípus-készítés miatt.",
         },
+        {
+            icon: <FaAngular />,
+            name: "angular",
+            desc: "Angular egy TypeScript-alapú keretrendszer, amely lehetővé teszi dinamikus és skálázható webes alkalmazások fejlesztését. Különösen népszerű csapatok körében az újrafelhasználható komponensek, a moduláris fejlesztés és a gyors prototípus-készítés miatt.",
+        },
+        {
+            icon: <FaPython />,
+            name: "python",
+            desc: "Python egy sokoldalú, könnyen tanulható programozási nyelv, amelyet széles körben használnak webfejlesztésre, adatelemzésre, gépi tanulásra és automatizálásra. Egyszerű szintaxisa és gazdag könyvtárai miatt népszerű mind kezdők, mind profi fejlesztők körében.",
+        },
+        {
+            icon: <TbBrandCpp />,
+            name: "C++",
+            desc: "C++ egy nagy teljesítményű, általános célú programozási nyelv, amelyet rendszerprogramozásra, játékmotorokra, grafikai alkalmazásokra és nagy igénybevételű szoftverek fejlesztésére használnak. Objektumorientált és alacsony szintű vezérlést biztosít, miközben hatékony és optimalizált kód írását teszi lehetővé.",
+        },
+        {
+            icon: <TbBrandCSharp />,
+            name: "C#",
+            desc: "C# egy objektumorientált programozási nyelv, amelyet a Microsoft fejlesztett ki, és elsősorban a .NET keretrendszerrel való használatra terveztek. Ideális asztali, webes és mobilalkalmazások fejlesztésére, valamint játékfejlesztésre a Unity motorral. Erőteljes és jól strukturált nyelv, amely támogatja a modern programozási paradigmákat.",
+        },
     ]
 }
 
@@ -162,7 +183,7 @@ const Resume = () => {
                 <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                     <TabsTrigger value="Szakmai tapasztalat">Szakmai tapasztalat</TabsTrigger>
                     <TabsTrigger value="Végzettségek, tanulmányok">Végzettségek, tanulmányok</TabsTrigger>
-                    <TabsTrigger value="Kompetenciák">Kompetenciák</TabsTrigger>
+                    <TabsTrigger value="Kompetenciák">Készségek</TabsTrigger>
                     <TabsTrigger value="Magamról">Magamról</TabsTrigger>
                 </TabsList>
 
