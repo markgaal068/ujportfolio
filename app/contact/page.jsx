@@ -22,7 +22,7 @@ const info = [
     {
         icon: <FaMapMarkerAlt />,
         title: 'Cím',
-        description: "Arany J. u. 5. Töltéstava, 9086",
+        description: "Győr",
     },
 ]
 

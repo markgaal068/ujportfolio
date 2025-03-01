@@ -8,15 +8,15 @@ const stats = [
         text: "Év tapasztalat"
     },
     {
-        num: 11,
+        num: 12,
         text: "Elkészített projekt"
     },
     {
-        num: 19,
+        num: 21,
         text: "Oktatott diák"
     },
     {
-        num: 603,
+        num: 642,
         text: "Megtartott óra"
     }
 ]

@@ -62,11 +62,6 @@ const education = {
     description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletes önéletrajzomban.",
     items: [
         {
-            institution: "GYSZC Jedlik Ányos Technikum",
-            degree: "PLC Programozó",
-            duration: "2024 -"
-        },
-        {
             institution: "Testnevelési Egyetem",
             degree: "Kézilabda edző (D licence)",
             duration: "2024 -"
@@ -286,6 +281,22 @@ const Resume = () => {
                                 <h3 className="text-2xl font-bold justify-normal">Szia, üdvözöllek!</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
                                     Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, szerzek új ismereteket. Matematika korrepetációval egyetem óta foglalkozok komolyabb szinten, mivel ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.
+                                </p>
+                                <p></p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                                Az informatika világa mindig is lenyűgözött, és célom, hogy ezen a területen elérjem a legmagasabb szintű szakmai tudást. Jelenleg a fullstack fejlesztés és az mesterséges intelligencia (AI) területei érdekelnek leginkább, és szeretnék ezekben mélyebben elmélyülni. Terveim között szerepel két MSc szak elvégzése is: a Mérnökinformatika MSc mellett a Kiberbiztonság MSc is fontos cél számomra, hogy szélesebb spektrumon belül tudjak szakmai fejlődést elérni. Emellett szeretnék további kurzusokat is elvégezni, például kézilabdaedzői képzést, esetleg magasabb szintű licenc megszerzését.
+                                </p>
+                                <p></p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                                Az új ismeretek megszerzése és a folyamatos fejlődés számomra kiemelten fontos. Nagyon szeretem az IT témájú könyveket, valamint a Fantasy irodalmat, és szívesen olvasok bármit, ami ezekbe a kategóriákba tartozik. Ezek az olvasmányok nemcsak szórakoztatnak, hanem inspirálnak is a kreatív problémamegoldásban és a technológiai innovációkban. Emellett hiszem, hogy a kitartás, a kreativitás és a csapatmunka kulcsfontosságúak a sikerhez, és ezeket az értékeket mindennapos munkámban is megpróbálom érvényesíteni.
+                                </p>
+                                <p></p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                                Hosszú távú céljaim között szerepel a saját vállalkozás alapítása, amelyet főállás mellett szeretnék felépíteni és felvirágoztatni. Szeretnék olyan innovatív projektekben részt venni, amelyek nemcsak szakmailag kihívást jelentenek, hanem társadalmilag is hasznosak. Emellett fontos számomra, hogy a sport és a szakmai élet között egyensúlyt teremtsek, hiszen mindkettő nélkülözhetetlen része az életemnek. A sportból szerzett tapasztalataim, mint a csapatmunka és a kitartás, szorosan összekapcsolódnak a szakmai világgal, és segítenek abban, hogy hatékonyabban dolgozzak és kommunikáljak.
+                                </p>
+                                <p></p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                                Mindemellett hiszem, hogy a folyamatos tanulás és a személyes fejlődés kulcsfontosságúak a sikerhez. Célom, hogy mind a szakmai, mind a személyes életemben olyan eredményeket érjek el, amelyekkel hosszú távon is azonosulni tudok. Ha szeretnél többet megtudni a munkáimról vagy a terveimről, esetleg szeretnél velem közösen dolgozni nyugodtan keress meg bizalommal!
                                 </p>
                             </div>
                         </div>

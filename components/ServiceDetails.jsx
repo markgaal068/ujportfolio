@@ -7,39 +7,42 @@ const ServiceDetails = ({ serviceIndex }) => {
                 <div className="bg-primary border border-accent text-white p-4 mt-4 rounded-lg shadow-lg">
                     <h3 className="font-bold text-lg">WEB ÁRAK</h3>
                     <p className="mt-2">
-                        Az árak a végösszeg felé haladnak, és ezek alkuképesek, de részletfizetés esetén további költségek merülhetnek fel.
-                        Különböző csomagok és egyszerűsített díjszabások is elérhetők, melyek az adott megrendeléstől függnek.
+                        Az árak iránymutatóak, de alkuképesek. Különböző csomagok és egyszerűsített díjszabások is elérhetők, melyek az adott megrendeléstől függnek.
                         A fő célom az, hogy minden ügyfelem a lehető legkedvezőbb ajánlatot kapja.
                     </p>
 
                     <h4 className="font-semibold mt-4">Weboldalak árai:</h4>
                     <ul className="list-disc ml-6 mt-1">
-                        <li>Egyoldalas weboldal: 79.990 Ft-tól</li>
-                        <li>Több oldalas weboldal: 159.990 Ft-tól</li>
+                        <li><strong>Statikus weboldal (egyoldalas):</strong> 79.990 Ft-tól</li>
+                        <li><strong>Statikus weboldal (több oldalas):</strong> 159.990 Ft-tól</li>
+                        <li><strong>Dinamikus weboldal (alap CMS-sel, pl. WordPress):</strong> 249.990 Ft-tól</li>
+                        <li><strong>E-kereskedelmi weboldal (alapértelmezett funkciókkal):</strong> 399.990 Ft-tól</li>
+                        <li><strong>Egyedi webalkalmazás (komplex funkciókkal):</strong> 599.990 Ft-tól</li>
                     </ul>
 
                     <h4 className="font-semibold mt-4">Webhosting, karbantartás és módosítási díjak:</h4>
                     <ul className="list-disc ml-6 mt-1">
-                        <li>Havi alapdíj: 5.000 Ft</li>
-                        <li>Módosítás díja: 2.500 Ft-tól</li>
+                        <li><strong>Havi alapdíj (hosting + alapszintű karbantartás):</strong> 5.000 Ft/hó</li>
+                        <li><strong>Éves előfizetés (hosting + karbantartás):</strong> 55.000 Ft/év (10% kedvezmény)</li>
+                        <li><strong>Módosítás díja (egyszeri):</strong> 2.500 Ft-tól (a módosítás mértékétől függően)</li>
                     </ul>
 
                     <h4 className="font-semibold mt-4">Logo- és arculattervezési díjak:</h4>
                     <ul className="list-disc ml-6 mt-1">
-                        <li>Konzultációs díj (20 perc ONLINE): INGYENES</li>
-                        <li>Alapdíj: 10.000 Ft</li>
-                        <li>Utólagos módosítás: Megbeszélés alapján történik.</li>
+                        <li><strong>Konzultációs díj (20 perc ONLINE):</strong> 2.500 Ft (végösszegből levonandó)</li>
+                        <li><strong>Alapdíj (logo vagy arculattervezés):</strong> 10.000 Ft-tól</li>
+                        <li><strong>Utólagos módosítás:</strong> Megbeszélés alapján történik.</li>
                     </ul>
 
                     <p className="font-semibold text-red-500 mt-4">FONTOS!</p>
                     <p className="mt-1">
                         A végösszeg 10%-a előlegként fizetendő, mely visszamondás esetén <span className="font-bold">NEM visszatérítendő.</span>
-                        Fizetési lehetőségek közé tartozik a készpénzfizetés és a banki átutalás is. Amennyiben csomagdíjainkról
-                        kíván érdeklődni, kérjük, hívja a +36 30 419 9942-es telefonszámot.
+                        Fizetési lehetőségek közé tartozik a készpénzfizetés és a banki átutalás is. Amennyiben csomagdíjaimról
+                        kíván érdeklődni, kérem, hívja a <strong>+36 30 419 9942</strong>-es telefonszámot.
                     </p>
 
                     <p className="mt-4">
-                        Minden ügyfél számára személyre szabott ajánlatot állítunk össze a megrendelés méretétől függően!
+                        Minden ügyfél számára személyre szabott ajánlatot állítok össze a megrendelés méretétől függően!
                     </p>
                 </div>
             );
@@ -78,24 +81,23 @@ const ServiceDetails = ({ serviceIndex }) => {
 
                     <h4 className="font-semibold mt-4">Kiszállási díj:</h4>
                     <p className="mt-2">
-                        Személyes oktatásra szerdai és pénteki napokon van lehetőség, amely kiszállási díja 140 Ft/km. Az időpontok előzetes egyeztetést igényelnek.
+                        Személyes oktatásra van lehetőség, aminek kiszállási díja 175 Ft/km. Az időpontok előzetes egyeztetést igényelnek.
                     </p>
 
                     <h4 className="font-semibold mt-4">Egyetemi hallgatók számára:</h4>
                     <p className="mt-2">
-                        A Győri Széchenyi István Egyetem hallgatóinak lehetősége van Matematika1-2-3 tárgyakból korrepetálásra, 5000 Ft / 45 perc díjazásért.
+                        A Győri Széchenyi István Egyetem hallgatóinak lehetősége van Matematika1-2-3 tárgyakból korrepetálásra, 7000 Ft / 45 perc díjazásért.
                     </p>
 
                     <h4 className="font-semibold mt-4">Kedvezmények:</h4>
                     <ul className="list-disc ml-6 mt-1">
-                        <li>Amennyiben a dolgozat nem éri el az elégséges (2) osztályzatot, a számonkérés előtti óradíj visszatérítendő.</li>
                         <li>Csoportos oktatás esetén 10% kedvezmény vehető igénybe diákonként. Például: 2 alsó tagozatos diák alapdíja 5000 Ft / 45 perc, kedvezménnyel 4500 Ft / 45 perc.</li>
                         <li>Egyéb kedvezmények (pl. SNI diákok, egyedülálló szülők gyermekeinek) e-mailben történő érdeklődés után elérhetők.</li>
                     </ul>
 
                     <p className="mt-4">
                         Fizetési lehetőségek: banki átutalás, illetve személyes alkalmak esetén készpénzes fizetés.
-                        Ha az e-mailben küldött megkeresésre három munkanapon belül nem érkezik válasz, kérjük, keressen telefonon az alábbi számon: +36 30 419 9942.
+                        Ha az e-mailben küldött megkeresésre három munkanapon belül nem érkezik válasz, kérjem, keressen telefonon az alábbi számon: +36 30 419 9942.
                     </p>
                 </div>
 
@@ -136,19 +138,18 @@ const ServiceDetails = ({ serviceIndex }) => {
 
                     <h4 className="font-semibold mt-4">Kiszállási Díj:</h4>
                     <p className="mt-2">
-                        Kiszállásra Győrben és környékén van lehetőség, mely 140 Ft/km díjat von maga után! Egyeztetés köteles!
+                        Személyes oktatásra van lehetőség, aminek kiszállási díja 175 Ft/km. Az időpontok előzetes egyeztetést igényelnek.
                     </p>
 
                     <h4 className="font-semibold mt-4">Kedvezmények:</h4>
                     <ul className="list-disc ml-6 mt-1">
-                        <li>Amennyiben a dolgozat nem éri el az elégséges (2) osztályzatot, a számonkérés előtti óradíj visszatérítendő.</li>
                         <li>Csoportos oktatás esetén 10% kedvezmény vehető igénybe diákonként.</li>
                         <li>Egyéb kedvezmények (pl. SNI diákok, egyedülálló szülők gyermekeinek) e-mailben történő érdeklődés után elérhetők.</li>
                     </ul>
 
                     <p className="mt-4">
                         Fizetési lehetőségek: banki átutalás, illetve személyes alkalmak esetén készpénzes fizetés.
-                        Ha az e-mailben küldött megkeresésre három munkanapon belül nem érkezik válasz, kérjük, keressen telefonon az alábbi számon: +36 30 419 9942.
+                        Ha az e-mailben küldött megkeresésre három munkanapon belül nem érkezik válasz, kérjem, keressen telefonon az alábbi számon: +36 30 419 9942.
                     </p>
                 </div>
 
