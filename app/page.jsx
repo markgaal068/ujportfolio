@@ -19,7 +19,7 @@ const Home = () => {
         <meta name="description" content="Korrepetálás Győrben és környékén, valamint webfejlesztési oktatás online és személyesen, igényre szabottan." />
         <meta name="keywords" content="webfejlesztés, korrepetálás, programozás, matematika, webdizájn, olcsó, hatékony, oktatás, Győr, Next.js, React, frontend, backend" />
         <meta property="og:title" content="Gaál Márk - Szabadúszó Webfejlesztő és Magántanár" />
-        <meta property="og:description" content="Korrepetálás Győrben és online webfejlesztési oktatás, rugalmasan és személyre szabottan." />
+        <meta property="og:description" content="Matematika korrepetálás Győrben és vonzáskörzetében, online, webfejlesztési megkeresések, rugalmasan, gyorsan és személyre szabottan." />
         <meta property="og:image" content="/your-image-url.jpg" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
@@ -36,7 +36,7 @@ const Home = () => {
                 "https://www.linkedin.com/in/gaalmark",
                 "https://github.com/markgaal068"
               ],
-              "description": "Korrepetálás Győrben és környékén, valamint online webfejlesztési oktatás."
+              "description": "Matematika korrepetálás Győrben és környékén, szabadúszó webfejlesztő."
             })
           }}
         />
@@ -53,7 +53,7 @@ const Home = () => {
               </h1>
               <h2 className="text-lg font-medium text-white/80">Webfejlesztés és matematika oktatás</h2>
               <p className="max-w-[500px] mb-9 text-white/80 text-justify">
-                Korrepetálás Győrben és vonzáskörzetében személyesen illetve online, valamint webfejlesztési oktatás bárhol, rugalmasan és igényre szabottan.
+                Matematika korrepetálás Győrben és vonzáskörzetében személyesen illetve online, valamint webfejlesztési megkeresések, rugalmasan, gyorsan és igényre szabottan.
               </p>
 
               {/* Gomb és social ikonok */}
