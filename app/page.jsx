@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
-// KOMPONENSEK
+// Komponensek
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
@@ -15,11 +15,13 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Gaál Márk - Szabadúszó Webfejlesztő és Magántanár</title>
-        <meta name="description" content="Korrepetálás Győrben és környékén, valamint webfejlesztési oktatás online és személyesen, igényre szabottan." />
-        <meta name="keywords" content="webfejlesztés, korrepetálás, programozás, matematika, webdizájn, olcsó, hatékony, oktatás, Győr, Next.js, React, frontend, backend" />
-        <meta property="og:title" content="Gaál Márk - Szabadúszó Webfejlesztő és Magántanár" />
-        <meta property="og:description" content="Matematika korrepetálás Győrben és vonzáskörzetében, online, webfejlesztési megkeresések, rugalmasan, gyorsan és személyre szabottan." />
+        <title>Matematika Magántanár Győr - Gaál Márk</title>
+        <meta
+          name="description"
+          content="Matematika korrepetálás Győrben és online. Tapasztalt magántanár egyéni vagy csoportos oktatásra. Webfejlesztési szolgáltatások."
+        />
+        <meta property="og:title" content="Matematika Magántanár Győr - Gaál Márk" />
+        <meta property="og:description" content="Matematika oktatás személyesen Győrben vagy online, valamint professzionális webfejlesztési szolgáltatások." />
         <meta property="og:image" content="/your-image-url.jpg" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
@@ -30,13 +32,13 @@ const Home = () => {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Gaál Márk",
-              "jobTitle": "Szabadúszó Webfejlesztő és Magántanár",
+              "jobTitle": "Matematika Magántanár & Webfejlesztő",
               "url": "https://www.gaalmark.hu",
               "sameAs": [
                 "https://www.linkedin.com/in/gaalmark",
                 "https://github.com/markgaal068"
               ],
-              "description": "Matematika korrepetálás Győrben és környékén, szabadúszó webfejlesztő."
+              "description": "Matematika magántanár Győrben, személyre szabott oktatás és professzionális webfejlesztés."
             })
           }}
         />
@@ -47,24 +49,19 @@ const Home = () => {
           <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
             {/* Szöveges rész */}
             <div className="text-center xl:text-left order-2 xl:order-none">
-              <h2 className="text-xl font-semibold">Szabadúszó, Magántanár</h2>
-              <h1 className="h1 mb-6">
+              <h1 className="h1 mb-4">
                 Gaál <span className="text-accent">Márk</span>
               </h1>
-              <h2 className="text-lg font-medium text-white/80">Webfejlesztés és matematika oktatás</h2>
-              <p className="max-w-[500px] mb-9 text-white/80 text-justify">
-                Matematika korrepetálás Győrben és vonzáskörzetében személyesen illetve online, valamint webfejlesztési megkeresések, rugalmasan, gyorsan és igényre szabottan.
+              <h2 className="text-xl font-semibold mb-4">Matematika Magántanár & Webfejlesztő</h2>
+              <p className="max-w-[500px] mb-6 text-white/80 text-justify">
+                Egyéni matematika korrepetálás Győrben és online, kezdőknek és haladóknak. Professzionális webfejlesztés.
               </p>
 
-              {/* Gomb és social ikonok */}
-              <div className="flex flex-col xl:flex-row items-center gap-8">
+              {/* Gombok és social ikonok */}
+              <div className="flex flex-col xl:flex-row items-center gap-6">
                 <Link href="/cv-letoltese">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="uppercase flex items-center gap-2"
-                  >
-                    <span>CV letöltése</span>
+                  <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
+                    <span>CV Letöltése</span>
                     <FiDownload className="text-xl" />
                   </Button>
                 </Link>
@@ -78,8 +75,8 @@ const Home = () => {
             </div>
 
             {/* Kép */}
-            <div>
-              <Photo className="order-1 xl:order-none mb-8 xl:mb-0" alt="Gaál Márk portré" />
+            <div className="order-1 xl:order-none mb-8 xl:mb-0">
+              <Photo alt="Gaál Márk - Matematika magántanár" />
             </div>
           </div>
         </div>
