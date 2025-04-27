@@ -4,163 +4,252 @@ const ServiceDetails = ({ serviceIndex }) => {
     switch (serviceIndex) {
         case 0:
             return (
-                <div className="bg-primary border border-accent text-white p-4 mt-4 rounded-lg shadow-lg">
-                    <h3 className="font-bold text-lg">WEB ÁRAK</h3>
-                    <p className="mt-2">
-                        Az árak iránymutatóak, de alkuképesek. Különböző csomagok és egyszerűsített díjszabások is elérhetők, melyek az adott megrendeléstől függnek.
-                        A fő célom az, hogy minden ügyfelem a lehető legkedvezőbb ajánlatot kapja.
-                    </p>
-
-                    <h4 className="font-semibold mt-4">Weboldalak árai:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li><strong>Statikus weboldal (egyoldalas):</strong> 79.990 Ft-tól</li>
-                        <li><strong>Statikus weboldal (több oldalas):</strong> 159.990 Ft-tól</li>
-                        <li><strong>Dinamikus weboldal (alap CMS-sel, pl. WordPress):</strong> 249.990 Ft-tól</li>
-                        <li><strong>E-kereskedelmi weboldal (alapértelmezett funkciókkal):</strong> 399.990 Ft-tól</li>
-                        <li><strong>Egyedi webalkalmazás (komplex funkciókkal):</strong> 599.990 Ft-tól</li>
-                    </ul>
-
-                    <h4 className="font-semibold mt-4">Webhosting, karbantartás és módosítási díjak:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li><strong>Havi alapdíj (hosting + alapszintű karbantartás):</strong> 5.000 Ft/hó</li>
-                        <li><strong>Éves előfizetés (hosting + karbantartás):</strong> 55.000 Ft/év (10% kedvezmény)</li>
-                        <li><strong>Módosítás díja (egyszeri):</strong> 2.500 Ft-tól (a módosítás mértékétől függően)</li>
-                    </ul>
-
-                    <h4 className="font-semibold mt-4">Logo- és arculattervezési díjak:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li><strong>Konzultációs díj (20 perc ONLINE):</strong> 2.500 Ft (végösszegből levonandó)</li>
-                        <li><strong>Alapdíj (logo vagy arculattervezés):</strong> 10.000 Ft-tól</li>
-                        <li><strong>Utólagos módosítás:</strong> Megbeszélés alapján történik.</li>
-                    </ul>
-
-                    <p className="font-semibold text-red-500 mt-4">FONTOS!</p>
-                    <p className="mt-1">
-                        A végösszeg 10%-a előlegként fizetendő, mely visszamondás esetén <span className="font-bold">NEM visszatérítendő.</span>
-                        Fizetési lehetőségek közé tartozik a készpénzfizetés és a banki átutalás is. Amennyiben csomagdíjaimról
-                        kíván érdeklődni, kérem, hívja a <strong>+36 30 419 9942</strong>-es telefonszámot.
-                    </p>
-
+                <div className="bg-primary border border-accent text-white p-6 mt-6 rounded-lg shadow-2xl">
+                    <h3 className="font-bold text-2xl">WEBFEJLESZTÉSI ÁRLISTA 2025</h3>
                     <p className="mt-4">
-                        Minden ügyfél számára személyre szabott ajánlatot állítok össze a megrendelés méretétől függően!
+                        Az alábbi árak tájékoztató jellegűek, a végső ár személyre szabottan, az adott projekt összetettségétől és igényeitől függően kerül meghatározásra.
+                        Elsődleges célom, hogy minden ügyfelem számára a lehető legjobb ár-érték arányt biztosítsam.
+                    </p>
+
+                    <h4 className="font-semibold text-xl mt-6">Weboldal készítés árai:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Egyszerű egyoldalas weboldal (Landing Page):</strong> 120.000 Ft-tól</li>
+                        <li><strong>Alap céges bemutatkozó oldal (5-7 aloldal):</strong> 250.000 Ft-tól</li>
+                        <li><strong>Dinamikus WordPress alapú weboldal (admin felülettel):</strong> 350.000 Ft-tól</li>
+                        <li><strong>Kis webshop (WooCommerce alapú, max. 20 termékig):</strong> 480.000 Ft-tól</li>
+                        <li><strong>Egyedi webalkalmazás (saját fejlesztésű modulokkal):</strong> 750.000 Ft-tól</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Óradíjas és kiegészítő szolgáltatások:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Webfejlesztési óradíj:</strong> 20.000 Ft/óra</li>
+                        <li><strong>Konzultáció (30 perc online):</strong> 3.000 Ft (a projekt díjából levonható)</li>
+                        <li><strong>SEO alapbeállítás (technikai + on-page):</strong> 60.000 Ft-tól</li>
+                        <li><strong>Weboldal sebességoptimalizálás:</strong> 80.000 Ft-tól</li>
+                        <li><strong>Egyedi funkciók/API integráció:</strong> 15.000 Ft-tól funkciónként</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Webhosting, karbantartás és módosítások:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Havi webhosting + alap karbantartás:</strong> 8.000 Ft/hó</li>
+                        <li><strong>Éves webhosting csomag (kedvezményes):</strong> 85.000 Ft/év (kb. 10% kedvezmény)</li>
+                        <li><strong>Kisebb módosítások (pl. tartalomcsere, apró frissítés):</strong> 3.500 Ft-tól</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Arculattervezési szolgáltatások:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Alap logótervezés:</strong> 18.000 Ft-tól</li>
+                        <li><strong>Teljes mini arculatcsomag (logo, színek, betűtípus ajánlás):</strong> 45.000 Ft-tól</li>
+                        <li><strong>Utólagos módosítások logótervezésnél:</strong> Egyéni megállapodás alapján</li>
+                    </ul>
+
+                    <p className="font-semibold text-red-400 mt-6">FONTOS TUDNIVALÓK!</p>
+                    <p className="mt-2">
+                        A megrendelés végösszegének 30%-a előlegként fizetendő, amely a projekt visszamondása esetén nem visszatérítendő.
+                        A fizetés történhet banki átutalással vagy készpénzben. Részletfizetési lehetőség előzetes egyeztetéssel elérhető.
+                    </p>
+
+                    <p className="mt-6">
+                        Minden projekt előtt részletes egyeztetést tartok az igényekről, hogy teljesen személyre szabott ajánlatot tudjak készíteni.
+                        További információért vagy ajánlatkérésért kérem, vegye fel velem a kapcsolatot a következő telefonszámon: <strong>+36 30 419 9942</strong>
                     </p>
                 </div>
             );
+
         case 1:
             return (
-                <div className="bg-primary border border-accent text-white p-4 mt-4 rounded-lg shadow-lg">
-                    <h3 className="font-bold text-lg">Korrepetálási Díjak</h3>
-                    <p className="mt-2">
-                        Az alábbiakban részletezett árak 45 perces tanórákra vonatkoznak. Lehetőség van online és személyes jelenlétű oktatás igénybevételére is.
-                        A személyes oktatás Győrben és környékén érhető el, amely esetén kiszállási díjat számítok fel. A díjak az alábbiak szerint alakulnak:
+                <div className="bg-primary border border-accent text-white p-6 mt-6 rounded-lg shadow-2xl">
+                    <h3 className="font-bold text-2xl">Korrepetálási Díjak – 2025</h3>
+                    <p className="mt-4">
+                        Az alábbi díjak 45 perces tanórákra vonatkoznak. Lehetőség van online és személyes oktatásra is. Személyes oktatás Győrben és környékén érhető el, külön kiszállási díjjal.
                     </p>
 
-                    <h4 className="font-semibold mt-4">Alsó tagozat:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>2500 Ft / 45 perc</li>
-                        <li>Házi feladatok ellenőrzése, hiányosságok javítása, tananyag elmagyarázása. Részletes egyeztetésre az e-mailben történő kapcsolatfelvétel után van lehetőség.</li>
+                    <h4 className="font-semibold text-xl mt-6">Alsó tagozat (1–4. osztály):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Online:</strong> 4.000 Ft / 45 perc</li>
+                        <li><strong>Személyes:</strong> 4.500 Ft / 45 perc</li>
+                        <li>Házi feladatok ellenőrzése, tananyag pótlása, személyre szabott gyakorlás.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Felső tagozat:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>3000 Ft / 45 perc</li>
-                        <li>Házi feladatok ellenőrzése, hiányosságok javítása, tananyag elmagyarázása. Részletes egyeztetésre az e-mailben történő kapcsolatfelvétel után van lehetőség.</li>
+                    <h4 className="font-semibold text-xl mt-6">Felső tagozat (5–8. osztály):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Online:</strong> 4.500 Ft / 45 perc</li>
+                        <li><strong>Személyes:</strong> 5.000 Ft / 45 perc</li>
+                        <li>Komplex feladatok magyarázata, felzárkóztatás, tantárgyi támogatás.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Középiskola:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>3500 Ft / 45 perc</li>
-                        <li>Házi feladatok ellenőrzése, hiányosságok javítása, tananyag elmagyarázása. Részletes egyeztetésre az e-mailben történő kapcsolatfelvétel után van lehetőség.</li>
+                    <h4 className="font-semibold text-xl mt-6">Középiskola (9–12. évfolyam):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Online:</strong> 5.500 Ft / 45 perc</li>
+                        <li><strong>Személyes:</strong> 6.000 Ft / 45 perc</li>
+                        <li>Feladatmegoldások, gyakorlati példák, érettségire való felkészítés.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Felvételi és középszintű érettségi felkészítő:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>4500 Ft / 45 perc</li>
-                        <li>Részletes egyeztetésre az e-mailben történő kapcsolatfelvétel után van lehetőség.</li>
+                    <h4 className="font-semibold text-xl mt-6">Felvételi és érettségi felkészítő (Középszint):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Online:</strong> 6.500 Ft / 45 perc</li>
+                        <li><strong>Személyes:</strong> 7.000 Ft / 45 perc</li>
+                        <li>Részletes felkészítő program, korábbi feladatsorok áttekintése, egyéni konzultációk.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Kiszállási díj:</h4>
+                    <h4 className="font-semibold text-xl mt-6">Egyetemi hallgatók részére:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Online:</strong> 8.000 Ft / 45 perc</li>
+                        <li><strong>Személyes:</strong> 8.500 Ft / 45 perc</li>
+                        <li>Matematika1-2-3 tárgyakból korrepetálás, ZH-kra és vizsgákra való felkészítés.</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Kiszállási díj:</h4>
                     <p className="mt-2">
-                        Személyes oktatásra van lehetőség, aminek kiszállási díja 175 Ft/km. Az időpontok előzetes egyeztetést igényelnek.
+                        Személyes oktatás esetén kiszállási díj: 250 Ft/km. Időpontok előzetes egyeztetéssel kérhetők.
                     </p>
 
-                    <h4 className="font-semibold mt-4">Egyetemi hallgatók számára:</h4>
-                    <p className="mt-2">
-                        A Győri Széchenyi István Egyetem hallgatóinak lehetősége van Matematika1-2-3 tárgyakból korrepetálásra, 7000 Ft / 45 perc díjazásért.
-                    </p>
-
-                    <h4 className="font-semibold mt-4">Kedvezmények:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>Csoportos oktatás esetén 10% kedvezmény vehető igénybe diákonként. Például: 2 alsó tagozatos diák alapdíja 5000 Ft / 45 perc, kedvezménnyel 4500 Ft / 45 perc.</li>
-                        <li>Egyéb kedvezmények (pl. SNI diákok, egyedülálló szülők gyermekeinek) e-mailben történő érdeklődés után elérhetők.</li>
+                    <h4 className="font-semibold text-xl mt-6">Kedvezmények:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Csoportos oktatás:</strong> 10% kedvezmény diákonként.</li>
+                        <li><strong>Havi bérlet (4 alkalom):</strong> 5% kedvezmény.</li>
+                        <li><strong>10 alkalmas bérlet:</strong> 10% kedvezmény.</li>
+                        <li><strong>SNI diákok, egyedülálló szülők gyermekei:</strong> egyedi kedvezmény e-mailes egyeztetéssel.</li>
                     </ul>
+
+                    <p className="mt-6">
+                        <strong>Fizetés:</strong> banki átutalással vagy személyes alkalmak esetén készpénzben lehetséges.
+                    </p>
 
                     <p className="mt-4">
-                        Fizetési lehetőségek: banki átutalás, illetve személyes alkalmak esetén készpénzes fizetés.
-                        Ha az e-mailben küldött megkeresésre három munkanapon belül nem érkezik válasz, kérjem, keressen telefonon az alábbi számon: +36 30 419 9942.
+                        Ha az e-mailes megkeresésre három munkanapon belül nem kap választ, kérem, hívjon telefonon a <strong>+36 30 419 9942</strong> számon.
                     </p>
                 </div>
-
             );
+
         case 2:
             return (
-                <div className="bg-primary border border-accent text-white p-4 mt-4 rounded-lg shadow-lg">
-                    <h3 className="font-bold text-lg">CAD - CAM Szolgáltatások Árlistája</h3>
-                    <p className="mt-2">
-                        Az árak a megadott szolgáltatásokra vonatkoznak, és az elkészítési idő függvényében változhatnak.
-                        Lehetőség van online és személyes jelenlétű oktatás igénybevételére is.
-                        A személyes oktatás Győrben és környékén érhető el, amely esetén kiszállási díjat számítok fel. A díjak az alábbiak szerint alakulnak:
+                <div className="bg-primary border border-accent text-white p-6 mt-6 rounded-lg shadow-2xl">
+                    <h3 className="font-bold text-2xl">CAD-CAM Szolgáltatások Árlistája – 2025</h3>
+                    <p className="mt-4">
+                        Az alábbi árak irányadóak, az elkészítési idő és a feladat bonyolultsága alapján változhatnak.
+                        Lehetőség van online és személyes szolgáltatások igénybevételére.
+                        Személyes jelenlét Győrben és környékén elérhető, kiszállási díj mellett.
                     </p>
 
-                    <h4 className="font-semibold mt-4">Gyártmányrajz Készítés:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>5000 Ft / óra</li>
-                        <li>Részletes gyártmányrajzok készítése, amelyek megfelelnek a műszaki előírásoknak.</li>
+                    <h4 className="font-semibold text-xl mt-6">Gyártmányrajz Készítés (AutoCAD, Inventor):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Alapár:</strong> 7.000 Ft / óra</li>
+                        <li>Részletes gyártmányrajzok készítése szabványok szerint, műszaki dokumentációval.</li>
+                        <li>Egyszerűbb alkatrészek esetén fix áras ajánlat kérhető.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">3D Modellezés:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>6000 Ft / óra</li>
-                        <li>Bonyolult 3D modellek készítése, amelyek felhasználhatók prototípusokhoz vagy gyártási folyamatokhoz.</li>
+                    <h4 className="font-semibold text-xl mt-6">3D Modellezés (Inventor):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Alapár:</strong> 8.000 Ft / óra</li>
+                        <li>3D alkatrészmodellek és összeállítások készítése, igény szerint gyártási dokumentációval.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Műszaki Rajzok Ellenőrzése:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>3500 Ft / óra</li>
-                        <li>Műszaki rajzok ellenőrzése és javítása, a hiányosságok kiigazítása.</li>
+                    <h4 className="font-semibold text-xl mt-6">CNC Programozás (Edgecam):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Alapár:</strong> 8.500 Ft / óra</li>
+                        <li>Alap szintű NC programok készítése esztergáláshoz és maráshoz, gépi megmunkáláshoz előkészítés.</li>
+                        <li>Bonyolultabb programokhoz részletes egyeztetés szükséges.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">CAD Oktatás:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>4000 Ft / 45 perc</li>
-                        <li>Online és jelenléti órák, amelyek során a CAD szoftverek használatát tanítom.</li>
+                    <h4 className="font-semibold text-xl mt-6">Műszaki Rajzok Ellenőrzése és Javítása:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Alapár:</strong> 5.500 Ft / óra</li>
+                        <li>Műszaki rajzok átnézése, szabványosság ellenőrzése, javítások javaslata.</li>
                     </ul>
 
-                    <h4 className="font-semibold mt-4">Kiszállási Díj:</h4>
+                    <h4 className="font-semibold text-xl mt-6">CAD Alapok Oktatása (AutoCAD, Inventor):</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Ár:</strong> 5.500 Ft / 45 perc</li>
+                        <li>Online vagy személyes oktatás, a szoftverek alapvető használatának elsajátítására.</li>
+                        <li>Kezdő szinttől középhaladó szintig.</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Kiszállási Díj:</h4>
                     <p className="mt-2">
-                        Személyes oktatásra van lehetőség, aminek kiszállási díja 175 Ft/km. Az időpontok előzetes egyeztetést igényelnek.
+                        Személyes konzultáció vagy oktatás esetén kiszállási díj: 250 Ft/km.
+                        Időpontok egyeztetése szükséges.
                     </p>
 
-                    <h4 className="font-semibold mt-4">Kedvezmények:</h4>
-                    <ul className="list-disc ml-6 mt-1">
-                        <li>Csoportos oktatás esetén 10% kedvezmény vehető igénybe diákonként.</li>
-                        <li>Egyéb kedvezmények (pl. SNI diákok, egyedülálló szülők gyermekeinek) e-mailben történő érdeklődés után elérhetők.</li>
+                    <h4 className="font-semibold text-xl mt-6">Kedvezmények és Csomagajánlatok:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>4 órás projektcsomag:</strong> 5% kedvezmény az alapárból.</li>
+                        <li><strong>10 órás projektcsomag:</strong> 10% kedvezmény az alapárból.</li>
+                        <li><strong>Csoportos oktatás (2-3 fő):</strong> 10% kedvezmény/fő.</li>
+                        <li><strong>SNI diákok, egyedülálló szülők gyermekei:</strong> egyedi kedvezmény kérhető e-mailben.</li>
                     </ul>
+
+                    <p className="mt-6">
+                        <strong>Fizetés:</strong> banki átutalás vagy személyes találkozón készpénzes fizetés.
+                        Előleg szükséges nagyobb projektek esetén (megbeszélés alapján).
+                    </p>
 
                     <p className="mt-4">
-                        Fizetési lehetőségek: banki átutalás, illetve személyes alkalmak esetén készpénzes fizetés.
-                        Ha az e-mailben küldött megkeresésre három munkanapon belül nem érkezik válasz, kérjem, keressen telefonon az alábbi számon: +36 30 419 9942.
+                        Ha három munkanapon belül nem kap visszajelzést az e-mailes megkeresésére, kérjük, hívjon a <strong>+36 30 419 9942</strong> telefonszámon.
                     </p>
                 </div>
-
             );
+
         case 3:
             return (
-                <div className="bg-primary border border-accent text-white p-4 mt-4 rounded-lg shadow-lg">
-                    <h3 className="font-bold text-lg">Személyi Edzés</h3>
-                    <p>Igénybe vehető: 2025 májusától.</p>
+                <div className="bg-primary border border-accent text-white p-6 mt-6 rounded-lg shadow-2xl">
+                    <h3 className="font-bold text-2xl">Személyi Edzés – 2025-től</h3>
+                    <p className="mt-4">
+                        Személyi edzéseim 2025 májusától elérhetők, Győrben és környékén.
+                        Szolgáltatásaimat elsősorban azoknak ajánlom, akik célzott erőnléti, állóképességi és teljesítményfokozó edzést keresnek.
+                    </p>
+
+                    <h4 className="font-semibold text-xl mt-6">Szakmai háttér:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Végzettség:</strong> Testnevelési Egyetem – kézilabda edző (D licence, 2025 május)</li>
+                        <li><strong>Tapasztalat:</strong> 3 év edzői gyakorlat, főként kondicionális képzésben, kézilabda közegben</li>
+                        <li><strong>Specialitás:</strong> teljesítményfokozás, erőnléti fejlesztés, prevenciós edzések</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Elérhető szolgáltatások:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Egyéni személyi edzések</strong> – kezdőknek, újrakezdőknek és haladóknak</li>
+                        <li><strong>Sportág-specifikus felkészítés</strong> – kézilabda, labdajátékok</li>
+                        <li><strong>Funkcionális edzések</strong> – core, stabilitás, mobilitás fejlesztés</li>
+                        <li><strong>Prevenciós programok</strong> – sérülésmegelőzésre fókuszálva</li>
+                        <li><strong>Edzéstervek készítése</strong> – személyre szabott 4–6–8 hetes programok, vagy általános erőnléti terv igény szerint</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Árak:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>Egyéni edzés:</strong> 7.500 Ft / 60 perc</li>
+                        <li><strong>2 fős edzés (páros tréning):</strong> 6.000 Ft / fő / 60 perc</li>
+                        <li><strong>3-4 fős csoportos edzés:</strong> 5.000 Ft / fő / 60 perc</li>
+                        <li><strong>4 hetes egyéni edzésterv készítése:</strong> 18.000 Ft (edzési célok alapján)</li>
+                        <li><strong>8 hetes egyéni edzésterv készítése:</strong> 32.000 Ft</li>
+                        <li><strong>Általános edzésterv (erőnléti, állóképességi fejlesztésre):</strong> 12.000 Ft</li>
+                    </ul>
+
+                    <h4 className="font-semibold text-xl mt-6">Edzés helyszínek:</h4>
+                    <p className="mt-2">
+                        Győr belvárosi edzőtermekben, szabadtéren vagy egyéni helyszíni egyeztetéssel.
+                        Személyes kiszállás lehetősége külön díjazás mellett (250 Ft/km).
+                    </p>
+
+                    <h4 className="font-semibold text-xl mt-6">Kedvezmények:</h4>
+                    <ul className="list-disc ml-6 mt-2">
+                        <li><strong>10 alkalmas bérlet egyéni edzésekhez:</strong> 5% kedvezmény</li>
+                        <li><strong>Sportolói háttérrel (igazolt versenyzők):</strong> egyedi árképzés megbeszélés szerint</li>
+                    </ul>
+
+                    <p className="mt-6">
+                        <strong>Fizetés:</strong> banki átutalás, vagy helyszínen készpénzes fizetés.
+                        Időpont egyeztetés szükséges minden edzés vagy edzésterv megrendelése előtt!
+                    </p>
+
+                    <p className="mt-4">
+                        Jelentkezés vagy érdeklődés: e-mailben vagy telefonon a <strong>+36 30 419 9942</strong> számon.
+                        Válaszidő: maximum 2 munkanap.
+                    </p>
                 </div>
             );
+
+
         default:
             return null;
     }

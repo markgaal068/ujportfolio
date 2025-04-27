@@ -8,10 +8,48 @@ import {
 } from "react-icons/si"
 
 
-//ALAPADATOK
+//publikációk, konferenciák
+const pubkonf = {
+    title: 'Publikációk, konferenciák'
+}
 
+//about
 const about = {
     title: 'Magamról'
+}
+
+
+//Tanfolyamok, kuruzsok
+const tanfkur = {
+    title: 'Tanfolyamok, kurzusok',
+    description: 'Általam elvégzett kurzusok illetve tanfolyamok, melyek tanusítványt adtak.',
+    items: [
+        {
+            institution: "CISCO Networking Academy",
+            degree: "CCN1 Course"
+        },
+        {
+            institution: "CISCO Networking Academy",
+            degree: "CCN2 Course"
+        },
+        {
+            institution: "CISCO Networking Academy",
+            degree: "IT Essentials"
+        },
+        {
+            institution: "CISCO Networking Academy",
+            degree: "Python Essentials"
+        },
+        {
+            institution: "Udemy",
+            degree: "CompTIA Security+"
+        },
+        {
+            institution: "Udemy",
+            degree: "Digital Marketing"
+        }
+
+    ]
 }
 
 //TAPASZTALATOK ISMERETEK
@@ -21,6 +59,11 @@ const experience = {
     title: 'Szakmai tapasztalat',
     description: "Szakmai tapasztalataim bemutatása, kiemelve a különböző pozíciókat és az iparágakat, ahol dolgoztam. Bővebb információ a részletesn önéletrajzomban.",
     items: [
+        {
+            company: "Avatao",
+            position: "Engineering support",
+            duration: "2025-Present "
+        },
         {
             company: "Széchenyi István Egyetem",
             position: "Külsős szakértő",
@@ -180,6 +223,9 @@ const Resume = () => {
                     <TabsTrigger value="Végzettségek, tanulmányok">Végzettségek, tanulmányok</TabsTrigger>
                     <TabsTrigger value="Kompetenciák">Készségek</TabsTrigger>
                     <TabsTrigger value="Magamról">Magamról</TabsTrigger>
+                    <TabsTrigger value="Tanfkur">Tanfolyamok, kurzusok</TabsTrigger>
+                    <TabsTrigger value="Pubkonf">Publikációk, konferenciák</TabsTrigger>
+
                 </TabsList>
 
                 {/* TARTALOM */}
@@ -277,27 +323,61 @@ const Resume = () => {
                         <div className="flex flex-col gap-[30px]">
                             <h3 className="text-4xl font-bold">{about.title}</h3>
                             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{about.description}</p>
+                            <div className="italic">
+                                <h3 className="text-2xl font-bold">Szia, üdvözöllek!</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
+                                    Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika BSc hallgatója. Középiskolás éveim óta foglalkozom programozással, azóta folyamatosan bővítem tudásomat.
+                                </p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
+                                    Az informatika világa mindig is lenyűgözött, jelenleg főként a fullstack fejlesztés és a mesterséges intelligencia területei érdekelnek. Terveim között szerepel Mérnökinformatika MSc és Kiberbiztonság MSc végzettségek megszerzése is.
+                                </p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
+                                    A sport szintén fontos része az életemnek: 2010 óta kézilabdázom, és az évek során megtanultam, hogy a kitartás, a csapatmunka és a fejlődés iránti vágy az élet minden területén kulcsszerepet játszik.
+                                </p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
+                                    Szabadidőmben szívesen olvasok IT témájú és fantasy könyveket, és mindig keresem az új kihívásokat, amelyek segítenek fejlődni szakmailag és emberileg is.
+                                </p>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
+                                    Hosszú távú célom saját vállalkozás létrehozása, valamint olyan projektekben való részvétel, amelyek szakmai és társadalmi értéket is teremtenek. Ha kíváncsi vagy a munkáimra vagy együttműködnél velem, keress bátran!
+                                </p>
+                            </div>
+                        </div>
+                    </TabsContent>
+
+
+
+                    {/* Tanfolyamok kurzusok */}
+                    <TabsContent value="Tanfkur" className="w-full text-center xl:text-left">
+                        <div className="flex flex-col gap-[30px]">
+                            <h3 className="text-4xl font-bold">{tanfkur.title}</h3>
+                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{tanfkur.description}</p>
+                            <ScrollArea className="h-[400px]">
+                                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                    {tanfkur.items.map((item, index) => {
+                                        return (<li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                                            <h3 className="text-xl max-w-[260px] min-h-[60px text-center lg:text-left">{item.degree}</h3>
+                                            <div className="flex items-center gap-3">
+                                                {/* dot */}
+                                                <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                <p className="text-white/60">{item.institution}</p>
+                                            </div>
+                                        </li>
+                                        )
+                                    })}
+                                </ul>
+                            </ScrollArea>
+                        </div>
+                    </TabsContent>
+
+
+                    {/* Publikációk konferenciák */}
+
+                    <TabsContent value="Pubkonf" className="w-full text-center xl:text-left">
+                        <div className="flex flex-col gap-[30px]">
+                            <h3 className="text-4xl font-bold">{pubkonf.title}</h3>
+                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{about.description}</p>
                             <div>
-                                <h3 className="text-2xl font-bold justify-normal">Szia, üdvözöllek!</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
-                                    Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika Bsc. szakos hallgatója! Középiskolás korom óta foglalkozkok a programozással, azóta tanulgatom, szerzek új ismereteket. Matematika korrepetációval egyetem óta foglalkozok komolyabb szinten, mivel ott szerettem meg. Sportolást, a kézilabdát 2010-ben kezdtem a SZESE utánpótlásában. Két nyelven tudok: angolul, valamint németül.
-                                </p>
-                                <p></p>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
-                                Az informatika világa mindig is lenyűgözött, és célom, hogy ezen a területen elérjem a legmagasabb szintű szakmai tudást. Jelenleg a fullstack fejlesztés és az mesterséges intelligencia (AI) területei érdekelnek leginkább, és szeretnék ezekben mélyebben elmélyülni. Terveim között szerepel két MSc szak elvégzése is: a Mérnökinformatika MSc mellett a Kiberbiztonság MSc is fontos cél számomra, hogy szélesebb spektrumon belül tudjak szakmai fejlődést elérni. Emellett szeretnék további kurzusokat is elvégezni, például kézilabdaedzői képzést, esetleg magasabb szintű licenc megszerzését.
-                                </p>
-                                <p></p>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
-                                Az új ismeretek megszerzése és a folyamatos fejlődés számomra kiemelten fontos. Nagyon szeretem az IT témájú könyveket, valamint a Fantasy irodalmat, és szívesen olvasok bármit, ami ezekbe a kategóriákba tartozik. Ezek az olvasmányok nemcsak szórakoztatnak, hanem inspirálnak is a kreatív problémamegoldásban és a technológiai innovációkban. Emellett hiszem, hogy a kitartás, a kreativitás és a csapatmunka kulcsfontosságúak a sikerhez, és ezeket az értékeket mindennapos munkámban is megpróbálom érvényesíteni.
-                                </p>
-                                <p></p>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
-                                Hosszú távú céljaim között szerepel a saját vállalkozás alapítása, amelyet főállás mellett szeretnék felépíteni és felvirágoztatni. Szeretnék olyan innovatív projektekben részt venni, amelyek nemcsak szakmailag kihívást jelentenek, hanem társadalmilag is hasznosak. Emellett fontos számomra, hogy a sport és a szakmai élet között egyensúlyt teremtsek, hiszen mindkettő nélkülözhetetlen része az életemnek. A sportból szerzett tapasztalataim, mint a csapatmunka és a kitartás, szorosan összekapcsolódnak a szakmai világgal, és segítenek abban, hogy hatékonyabban dolgozzak és kommunikáljak.
-                                </p>
-                                <p></p>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
-                                Mindemellett hiszem, hogy a folyamatos tanulás és a személyes fejlődés kulcsfontosságúak a sikerhez. Célom, hogy mind a szakmai, mind a személyes életemben olyan eredményeket érjek el, amelyekkel hosszú távon is azonosulni tudok. Ha szeretnél többet megtudni a munkáimról vagy a terveimről, esetleg szeretnél velem közösen dolgozni nyugodtan keress meg bizalommal!
-                                </p>
+                                <p><i>Jelenleg nincs megjeleníthető tartalom...</i></p>
                             </div>
                         </div>
                     </TabsContent>
