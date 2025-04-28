@@ -60,7 +60,7 @@ const experience = {
     description: "Szakmai tapasztalataim bemutatása, kiemelve a különböző pozíciókat és az iparágakat, ahol dolgoztam. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
-            company: "Avatao",
+            company: "Avatao Innovative Learning Kft.",
             position: "Engineering support",
             duration: "2025-Present "
         },
@@ -116,7 +116,7 @@ const education = {
         },
         {
             institution: "GYSZC Jedlik Ányos Technikum",
-            degree: "CAD-CAM Informatikus",
+            degree: "CAD-CAM informatikus",
             duration: "2021 - 2022"
         },
         {
@@ -217,14 +217,14 @@ const Resume = () => {
             <h3 className="text-4xl font-bold">Miért engem?</h3>
             <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">asdasd</p>
             </div> */}
-            <Tabs defaultValue="Szakmai tapasztalat" className="flex flex-col xl:flex-row gap-[60px]">
+            <Tabs defaultValue="Magamról" className="flex flex-col xl:flex-row gap-[60px]">
                 <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+                    <TabsTrigger value="Magamról">Magamról</TabsTrigger>
                     <TabsTrigger value="Szakmai tapasztalat">Szakmai tapasztalat</TabsTrigger>
                     <TabsTrigger value="Végzettségek, tanulmányok">Végzettségek, tanulmányok</TabsTrigger>
                     <TabsTrigger value="Kompetenciák">Készségek</TabsTrigger>
-                    <TabsTrigger value="Magamról">Magamról</TabsTrigger>
                     <TabsTrigger value="Tanfkur">Tanfolyamok, kurzusok</TabsTrigger>
-                    <TabsTrigger value="Pubkonf">Publikációk, konferenciák</TabsTrigger>
+                    {/* <TabsTrigger value="Pubkonf">Publikációk, konferenciák</TabsTrigger> */}
 
                 </TabsList>
 

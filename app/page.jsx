@@ -52,14 +52,14 @@ const Home = () => {
               <h1 className="h1 mb-4">
                 Gaál <span className="text-accent">Márk</span>
               </h1>
-              <h2 className="text-xl font-semibold mb-4">Matematika Magántanár & Webfejlesztő</h2>
+              <h2 className="text-xl font-semibold mb-4">Matematika magántanár & webfejlesztő</h2>
               <p className="max-w-[500px] mb-6 text-white/80 text-justify">
-                Egyéni matematika korrepetálás Győrben és online, kezdőknek és haladóknak. Professzionális webfejlesztés.
+                Egyéni matematikakorrepetálás Győrben és online, kezdőknek és haladóknak. Professzionális webfejlesztés.
               </p>
 
               {/* Gombok és social ikonok */}
               <div className="flex flex-col xl:flex-row items-center gap-6">
-                <Link href="/cv-letoltese">
+                <Link href="/CVPage">
                   <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                     <span>CV Letöltése</span>
                     <FiDownload className="text-xl" />

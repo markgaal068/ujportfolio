@@ -6,54 +6,49 @@ const ServiceDetails = ({ serviceIndex }) => {
             return (
                 <div className="bg-primary border border-accent text-white p-6 mt-6 rounded-lg shadow-2xl">
                     <h3 className="font-bold text-2xl">WEBFEJLESZTÉSI ÁRLISTA 2025</h3>
+
                     <p className="mt-4">
-                        Az alábbi árak tájékoztató jellegűek, a végső ár személyre szabottan, az adott projekt összetettségétől és igényeitől függően kerül meghatározásra.
-                        Elsődleges célom, hogy minden ügyfelem számára a lehető legjobb ár-érték arányt biztosítsam.
+                        2026 januárjában végzek a Széchenyi István Egyetem Mérnökinformatika BSc szakán.
+                        Friss, naprakész tudással, fiatalos szemlélettel, mégis komoly szakmai hozzáállással vállalok webfejlesztési és IT projektekben munkát.
                     </p>
 
-                    <h4 className="font-semibold text-xl mt-6">Weboldal készítés árai:</h4>
+                    <p className="mt-4">
+                        Minden feladat egyedi, ezért óradíjas elszámolással dolgozom. Elsődleges célom a megbízható, átlátható és magas színvonalú szolgáltatás nyújtása.
+                    </p>
+
+                    <h4 className="font-semibold text-xl mt-6">Általános óradíj:</h4>
                     <ul className="list-disc ml-6 mt-2">
-                        <li><strong>Egyszerű egyoldalas weboldal (Landing Page):</strong> 120.000 Ft-tól</li>
-                        <li><strong>Alap céges bemutatkozó oldal (5-7 aloldal):</strong> 250.000 Ft-tól</li>
-                        <li><strong>Dinamikus WordPress alapú weboldal (admin felülettel):</strong> 350.000 Ft-tól</li>
-                        <li><strong>Kis webshop (WooCommerce alapú, max. 20 termékig):</strong> 480.000 Ft-tól</li>
-                        <li><strong>Egyedi webalkalmazás (saját fejlesztésű modulokkal):</strong> 750.000 Ft-tól</li>
+                        <li><strong>Webfejlesztés (frontend, backend, WordPress):</strong> 18.000 Ft/óra</li>
+                        <li><strong>Weboldal karbantartás, frissítés, módosítások:</strong> 15.000 Ft/óra</li>
+                        <li><strong>SEO optimalizálás (technikai és tartalmi):</strong> 17.000 Ft/óra</li>
+                        <li><strong>Konzultáció, projekttervezés (online/telefonon):</strong> 8.000 Ft/30 perc</li>
                     </ul>
 
-                    <h4 className="font-semibold text-xl mt-6">Óradíjas és kiegészítő szolgáltatások:</h4>
+                    <h4 className="font-semibold text-xl mt-6">Egyéb szolgáltatások óradíj alapon:</h4>
                     <ul className="list-disc ml-6 mt-2">
-                        <li><strong>Webfejlesztési óradíj:</strong> 20.000 Ft/óra</li>
-                        <li><strong>Konzultáció (30 perc online):</strong> 3.000 Ft (a projekt díjából levonható)</li>
-                        <li><strong>SEO alapbeállítás (technikai + on-page):</strong> 60.000 Ft-tól</li>
-                        <li><strong>Weboldal sebességoptimalizálás:</strong> 80.000 Ft-tól</li>
-                        <li><strong>Egyedi funkciók/API integráció:</strong> 15.000 Ft-tól funkciónként</li>
+                        <li><strong>Weboldal sebességoptimalizálás:</strong> 17.000 Ft/óra</li>
+                        <li><strong>Egyedi funkciók, API-k fejlesztése:</strong> 20.000 Ft/óra</li>
+                        <li><strong>Reszponzív design javítása vagy kialakítása:</strong> 16.000 Ft/óra</li>
+                        <li><strong>Tanácsadás tárhely/domain/technikai kérdésekben:</strong> 8.000 Ft/30 perc</li>
                     </ul>
 
-                    <h4 className="font-semibold text-xl mt-6">Webhosting, karbantartás és módosítások:</h4>
-                    <ul className="list-disc ml-6 mt-2">
-                        <li><strong>Havi webhosting + alap karbantartás:</strong> 8.000 Ft/hó</li>
-                        <li><strong>Éves webhosting csomag (kedvezményes):</strong> 85.000 Ft/év (kb. 10% kedvezmény)</li>
-                        <li><strong>Kisebb módosítások (pl. tartalomcsere, apró frissítés):</strong> 3.500 Ft-tól</li>
-                    </ul>
 
-                    <h4 className="font-semibold text-xl mt-6">Arculattervezési szolgáltatások:</h4>
-                    <ul className="list-disc ml-6 mt-2">
-                        <li><strong>Alap logótervezés:</strong> 18.000 Ft-tól</li>
-                        <li><strong>Teljes mini arculatcsomag (logo, színek, betűtípus ajánlás):</strong> 45.000 Ft-tól</li>
-                        <li><strong>Utólagos módosítások logótervezésnél:</strong> Egyéni megállapodás alapján</li>
-                    </ul>
+                    <p className="mt-6">
+                        A projektidő becslését minden megrendelés előtt részletes egyeztetés alapján adom meg.
+                        Kisebb feladatok esetén a minimális elszámolási egység 30 perc.
+                    </p>
 
-                    <p className="font-semibold text-red-400 mt-6">FONTOS TUDNIVALÓK!</p>
+                    <p className="font-semibold text-red-400 mt-6">Fontos tudnivalók:</p>
                     <p className="mt-2">
-                        A megrendelés végösszegének 30%-a előlegként fizetendő, amely a projekt visszamondása esetén nem visszatérítendő.
-                        A fizetés történhet banki átutalással vagy készpénzben. Részletfizetési lehetőség előzetes egyeztetéssel elérhető.
+                        A megrendelés végösszegének 30%-át előlegként kérem. A fizetés banki átutalással történik.
+                        Előzetes megállapodással részletfizetésre is van lehetőség.
                     </p>
 
                     <p className="mt-6">
-                        Minden projekt előtt részletes egyeztetést tartok az igényekről, hogy teljesen személyre szabott ajánlatot tudjak készíteni.
-                        További információért vagy ajánlatkérésért kérem, vegye fel velem a kapcsolatot a következő telefonszámon: <strong>+36 30 419 9942</strong>
+                        További információért vagy személyre szabott ajánlatért keress bizalommal az alábbi elérhetőségen: <strong>+36 30 419 9942</strong>.
                     </p>
                 </div>
+
             );
 
         case 1:
@@ -96,7 +91,7 @@ const ServiceDetails = ({ serviceIndex }) => {
                     <ul className="list-disc ml-6 mt-2">
                         <li><strong>Online:</strong> 8.000 Ft / 45 perc</li>
                         <li><strong>Személyes:</strong> 8.500 Ft / 45 perc</li>
-                        <li>Matematika1-2-3 tárgyakból korrepetálás, ZH-kra és vizsgákra való felkészítés.</li>
+                        <li>Matematika 1-2-3 tárgyakból korrepetálás, ZH-kra és vizsgákra való felkészítés.</li>
                     </ul>
 
                     <h4 className="font-semibold text-xl mt-6">Kiszállási díj:</h4>
@@ -117,7 +112,7 @@ const ServiceDetails = ({ serviceIndex }) => {
                     </p>
 
                     <p className="mt-4">
-                        Ha az e-mailes megkeresésre három munkanapon belül nem kap választ, kérem, hívjon telefonon a <strong>+36 30 419 9942</strong> számon.
+                        Ha az e-mailes megkeresésre három munkanapon belül nem kap választ, kérem, hívjon telefonon a <strong>+36304199942</strong> számon.
                     </p>
                 </div>
             );
@@ -185,7 +180,7 @@ const ServiceDetails = ({ serviceIndex }) => {
                     </p>
 
                     <p className="mt-4">
-                        Ha három munkanapon belül nem kap visszajelzést az e-mailes megkeresésére, kérjük, hívjon a <strong>+36 30 419 9942</strong> telefonszámon.
+                        Ha három munkanapon belül nem kap visszajelzést az e-mailes megkeresésére, kérjük, hívjon a <strong>+36304199942</strong> telefonszámon.
                     </p>
                 </div>
             );
@@ -217,9 +212,9 @@ const ServiceDetails = ({ serviceIndex }) => {
 
                     <h4 className="font-semibold text-xl mt-6">Árak:</h4>
                     <ul className="list-disc ml-6 mt-2">
-                        <li><strong>Egyéni edzés:</strong> 7.500 Ft / 60 perc</li>
-                        <li><strong>2 fős edzés (páros tréning):</strong> 6.000 Ft / fő / 60 perc</li>
-                        <li><strong>3-4 fős csoportos edzés:</strong> 5.000 Ft / fő / 60 perc</li>
+                        <li><strong>Egyéni edzés:</strong> 7.500 Ft / 60 perc (időpont-egyeztetés szükséges)</li>
+                        <li><strong>2 fős edzés (páros tréning):</strong> 6.000 Ft / fő / 60 perc (időpont-egyeztetés szükséges)</li>
+                        <li><strong>3-4 fős csoportos edzés:</strong> 5.000 Ft / fő / 60 perc (időpont-egyeztetés szükséges)</li>
                         <li><strong>4 hetes egyéni edzésterv készítése:</strong> 18.000 Ft (edzési célok alapján)</li>
                         <li><strong>8 hetes egyéni edzésterv készítése:</strong> 32.000 Ft</li>
                         <li><strong>Általános edzésterv (erőnléti, állóképességi fejlesztésre):</strong> 12.000 Ft</li>
@@ -239,14 +234,15 @@ const ServiceDetails = ({ serviceIndex }) => {
 
                     <p className="mt-6">
                         <strong>Fizetés:</strong> banki átutalás, vagy helyszínen készpénzes fizetés.
-                        Időpont egyeztetés szükséges minden edzés vagy edzésterv megrendelése előtt!
+                        Időpont-egyeztetés szükséges minden edzés vagy edzésterv megrendelése előtt!
                     </p>
 
                     <p className="mt-4">
-                        Jelentkezés vagy érdeklődés: e-mailben vagy telefonon a <strong>+36 30 419 9942</strong> számon.
+                        Jelentkezés vagy érdeklődés: e-mailben vagy telefonon a <strong>+36304199942</strong> számon.
                         Válaszidő: maximum 2 munkanap.
                     </p>
                 </div>
+
             );
 
 
