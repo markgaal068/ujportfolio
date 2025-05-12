@@ -47,6 +47,10 @@ const tanfkur = {
         {
             institution: "Udemy",
             degree: "Digital Marketing"
+        },
+        {
+            institution: "Udemy",
+            degree: "Sales Essentials"
         }
 
     ]
