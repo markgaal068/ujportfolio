@@ -26,11 +26,11 @@ const tanfkur = {
     items: [
         {
             institution: "CISCO Networking Academy",
-            degree: "CCN1 Course"
+            degree: "CCNA1 Course"
         },
         {
             institution: "CISCO Networking Academy",
-            degree: "CCN2 Course"
+            degree: "CCNA2 Course"
         },
         {
             institution: "CISCO Networking Academy",
@@ -38,7 +38,7 @@ const tanfkur = {
         },
         {
             institution: "CISCO Networking Academy",
-            degree: "Python Essentials"
+            degree: "Python essentials"
         },
         {
             institution: "Udemy",
@@ -46,11 +46,15 @@ const tanfkur = {
         },
         {
             institution: "Udemy",
-            degree: "Digital Marketing"
+            degree: "Digital marketing"
         },
         {
             institution: "Udemy",
-            degree: "Sales Essentials"
+            degree: "Sales essentials"
+        },
+        {
+            institution: "Udemy",
+            degree: "Ai lead generation"
         }
 
     ]
@@ -110,8 +114,13 @@ const education = {
     items: [
         {
             institution: "Testnevelési Egyetem",
+            degree: "Kézilabda edző (C licence)",
+            duration: "2025 - "
+        },
+        {
+            institution: "Testnevelési Egyetem",
             degree: "Kézilabda edző (D licence)",
-            duration: "2024 -"
+            duration: "2024 - 2025"
         },
         {
             institution: "Széchenyi István Egyetem",
