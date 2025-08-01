@@ -47,7 +47,7 @@ const Contact = () => {
         sendButton.textContent = "Folyamatban..";
 
         try {
-            const response = await axios.post('https://tested-frequent-umbra.glitch.me/send-email', data);
+            const response = await axios.post('https://ujportfolio.onrender.com/send-email', data);
             alert(response.data); //success
         } catch (error) {
             console.error("Error details:", error);
