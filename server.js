@@ -5,6 +5,7 @@ const sendEmail = require('./email');
 
 const app = express();
 app.use(cors());
+app.options('*', cors());
 app.use(bodyParser.json());
 
 app.post('/send-email', (req, res) => {
