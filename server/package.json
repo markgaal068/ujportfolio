@@ -1,0 +1,12 @@
+{
+  "name": "ujportfolio-backend",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.3",
+    "nodemailer": "^6.9.15"
+  }
+}
