@@ -47,7 +47,7 @@ const Contact = () => {
         sendButton.textContent = "Folyamatban..";
 
         try {
-            const response = await axios.post('https://ujportfolio.onrender.com/send-email', data);
+            const response = await axios.post('/api/send-email', data);
             alert(response.data); //success
         } catch (error) {
             console.error("Error details:", error);
