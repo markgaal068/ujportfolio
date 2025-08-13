@@ -26,6 +26,10 @@ const links = [
         name: 'kapcsolat',
         path: "/contact",
     },
+    {
+        name: "órarend",
+        path: "/schedule",
+    }
 ]
 
 

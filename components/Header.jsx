@@ -21,9 +21,9 @@ const Header = () => {
                 {/*ASZTALI NÉZET NAVBAR & hire me gomb*/}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
-                    <Link href="/contact">
+                    {/* <Link href="/contact">
                         <Button>Itt megtalálsz!</Button>
-                    </Link>
+                    </Link> */}
                 </div>
 
 
