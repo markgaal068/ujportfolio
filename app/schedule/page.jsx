@@ -14,8 +14,6 @@ const events = [
   { day: "Péntek", start: "6:00", end: "10:00", title: "Munka", color: "bg-blue-500/80" },
   { day: "Péntek", start: "11:00", end: "14:00", title: "Egyetem", color: "bg-orange-500/80" },
   { day: "Péntek", start: "15:00", end: "18:00", title: "Tanítás", color: "bg-green-500/80" },
-
-
 ];
 
 const days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", "Vasárnap"];
@@ -49,44 +47,12 @@ export default function OrarendTable() {
   useEffect(() => {
     const loadingTimer = setTimeout(() => setLoading(false), 500);
     const timeTimer = setInterval(() => setCurrentTime(new Date()), 60000);
-    
-    // Handle swipe gestures
-    const handleTouchStart = (e) => {
-      setTouchStart(e.targetTouches[0].clientX);
-    };
-    
-    const handleTouchMove = (e) => {
-      setTouchEnd(e.targetTouches[0].clientX);
-    };
-    
-    const handleTouchEnd = () => {
-      if (touchStart - touchEnd > 50) {
-        // Swipe left
-        setCurrentDayIndex((prev) => (prev < days.length - 1 ? prev + 1 : prev));
-      }
-      
-      if (touchStart - touchEnd < -50) {
-        // Swipe right
-        setCurrentDayIndex((prev) => (prev > 0 ? prev - 1 : prev));
-      }
-    };
-
-    if (isMobile && tableRef.current) {
-      tableRef.current.addEventListener('touchstart', handleTouchStart);
-      tableRef.current.addEventListener('touchmove', handleTouchMove);
-      tableRef.current.addEventListener('touchend', handleTouchEnd);
-    }
 
     return () => {
       clearTimeout(loadingTimer);
       clearInterval(timeTimer);
-      if (isMobile && tableRef.current) {
-        tableRef.current.removeEventListener('touchstart', handleTouchStart);
-        tableRef.current.removeEventListener('touchmove', handleTouchMove);
-        tableRef.current.removeEventListener('touchend', handleTouchEnd);
-      }
     };
-  }, [touchStart, touchEnd, isMobile]);
+  }, []);
 
   if (loading) {
     return (
@@ -105,7 +71,7 @@ export default function OrarendTable() {
   const renderDayHeaders = () => {
     if (isMobile) {
       return (
-        <th 
+        <th
           className="border border-gray-700 p-2 bg-gray-800 text-accent border-b-2 border-accent"
           colSpan={1}
         >
@@ -113,13 +79,8 @@ export default function OrarendTable() {
         </th>
       );
     }
-    return days.map((day, index) => (
-      <th
-        key={day}
-        className={`border border-gray-700 p-2 bg-gray-800 ${
-          currentDayIndex === index ? 'text-accent border-b-2 border-accent' : ''
-        }`}
-      >
+    return days.map((day) => (
+      <th key={day} className="border border-gray-700 p-2 bg-gray-800">
         {day}
       </th>
     ));
@@ -129,16 +90,17 @@ export default function OrarendTable() {
     if (isMobile) {
       const day = days[currentDayIndex];
       const event = events.find(
-        (e) => e.day === day && timeToMinutes(e.start) >= timeToMinutes(hour) && timeToMinutes(e.start) < timeToMinutes(hour) + 60
+        (e) =>
+          e.day === day &&
+          timeToMinutes(e.start) >= timeToMinutes(hour) &&
+          timeToMinutes(e.start) < timeToMinutes(hour) + 60
       );
-      
+
       const isSpanned = events.some(
         (e) => e.day === day && timeToMinutes(e.start) < timeToMinutes(hour) && timeToMinutes(e.end) > timeToMinutes(hour)
       );
 
-      if (isSpanned) {
-        return null;
-      }
+      if (isSpanned) return null;
 
       if (event) {
         const durationMinutes = timeToMinutes(event.end) - timeToMinutes(event.start);
@@ -151,7 +113,9 @@ export default function OrarendTable() {
             rowSpan={rowSpan}
             className={`relative ${borderColor} border-2`}
           >
-            <div className={`absolute inset-0 ${event.color} bg-gradient-to-b from-white/10 to-transparent flex items-center justify-center text-white font-semibold rounded-sm m-0.5`}>
+            <div
+              className={`absolute inset-0 ${event.color} bg-gradient-to-b from-white/10 to-transparent flex items-center justify-center text-white font-semibold rounded-sm m-0.5`}
+            >
               {event.title}
             </div>
           </td>
@@ -161,18 +125,20 @@ export default function OrarendTable() {
       return <td key={`${day}-${hour}`} className="border border-gray-700 p-1"></td>;
     }
 
+    // Asztali nézet – minden nap oszlop
     return days.map((day) => {
       const event = events.find(
-        (e) => e.day === day && timeToMinutes(e.start) >= timeToMinutes(hour) && timeToMinutes(e.start) < timeToMinutes(hour) + 60
+        (e) =>
+          e.day === day &&
+          timeToMinutes(e.start) >= timeToMinutes(hour) &&
+          timeToMinutes(e.start) < timeToMinutes(hour) + 60
       );
-      
+
       const isSpanned = events.some(
         (e) => e.day === day && timeToMinutes(e.start) < timeToMinutes(hour) && timeToMinutes(e.end) > timeToMinutes(hour)
       );
 
-      if (isSpanned) {
-        return null;
-      }
+      if (isSpanned) return null;
 
       if (event) {
         const durationMinutes = timeToMinutes(event.end) - timeToMinutes(event.start);
@@ -185,7 +151,9 @@ export default function OrarendTable() {
             rowSpan={rowSpan}
             className={`relative ${borderColor} border-2`}
           >
-            <div className={`absolute inset-0 ${event.color} bg-gradient-to-b from-white/10 to-transparent flex items-center justify-center text-white font-semibold rounded-sm m-0.5`}>
+            <div
+              className={`absolute inset-0 ${event.color} bg-gradient-to-b from-white/10 to-transparent flex items-center justify-center text-white font-semibold rounded-sm m-0.5`}
+            >
               {event.title}
             </div>
           </td>
@@ -199,9 +167,18 @@ export default function OrarendTable() {
   return (
     <div className="h-screen w-screen bg-[#1c1c1f] flex flex-col items-center pt-4 overflow-hidden">
       <h1 className="text-3xl font-extrabold mb-4 text-white">Órarend</h1>
-      <div 
+      <div
         className="bg-[#27272c] rounded-xl shadow-xl border-2 border-accent p-4 w-[95vw] max-w-[1200px] h-[calc(100vh-120px)] overflow-auto relative"
         ref={tableRef}
+        onTouchStart={(e) => setTouchStart(e.targetTouches[0]?.clientX ?? 0)}
+        onTouchMove={(e) => setTouchEnd(e.targetTouches[0]?.clientX ?? 0)}
+        onTouchEnd={() => {
+          const diff = touchStart - touchEnd;
+          if (diff > 50 && currentDayIndex < days.length - 1) setCurrentDayIndex(currentDayIndex + 1);
+          else if (diff < -50 && currentDayIndex > 0) setCurrentDayIndex(currentDayIndex - 1);
+          setTouchStart(0);
+          setTouchEnd(0);
+        }}
       >
         <table className="border-collapse table-fixed w-full">
           <thead>
@@ -211,15 +188,16 @@ export default function OrarendTable() {
             </tr>
           </thead>
           <tbody>
-            {/* Current time indicator */}
             {now >= firstHour && now < firstHour + hours.length * 60 && (
-              <tr className="absolute left-0 right-0 z-30 pointer-events-none" style={{ top: `${timeLineTop}px` }}>
+              <tr
+                className="absolute left-0 right-0 z-30 pointer-events-none"
+                style={{ top: `${timeLineTop}px` }}
+              >
                 <td colSpan={days.length + 1}>
                   <div className="h-0.5 bg-accent-bright shadow-lg shadow-accent-bright/50" />
                 </td>
               </tr>
             )}
-
             {hours.map((hour) => (
               <tr key={hour} className="h-12 border-b border-gray-700 hover:bg-gray-700/30 transition-colors">
                 <td className="border-x border-gray-700 p-1 text-center font-medium bg-gray-800">

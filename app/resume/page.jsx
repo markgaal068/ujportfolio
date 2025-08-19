@@ -10,7 +10,18 @@ import {
 
 //publikációk, konferenciák
 const pubkonf = {
-    title: 'Publikációk, konferenciák'
+    title: "Publikációk, konferenciák",
+    description: "Megjelent tanulmányok, konferencia-előadások és kutatási kiadványok.",
+    items: [
+        {
+            title: "A neurális hálózatok fejlődése és alkalmazása a modern mesterséges intelligenciában ",
+            subtitle: "Smart Law Research Group – Working Paper No. 2 (2025)",
+            type: "Tanulmány",
+            venue: "Smart Law Research Group, Lébény",
+            year: "2025",
+            link: "https://www.smartlawresearch.hu/storage/app/media/Kiadvanyok/slrgwp_2-2025.pdf"
+        },
+    ]
 }
 
 //about
@@ -237,7 +248,7 @@ const Resume = () => {
                     <TabsTrigger value="Végzettségek, tanulmányok">Végzettségek, tanulmányok</TabsTrigger>
                     <TabsTrigger value="Kompetenciák">Készségek</TabsTrigger>
                     <TabsTrigger value="Tanfkur">Tanfolyamok, kurzusok</TabsTrigger>
-                    {/* <TabsTrigger value="Pubkonf">Publikációk, konferenciák</TabsTrigger> */}
+                    <TabsTrigger value="Pubkonf">Publikációk, konferenciák</TabsTrigger>
 
                 </TabsList>
 
@@ -388,12 +399,44 @@ const Resume = () => {
                     <TabsContent value="Pubkonf" className="w-full text-center xl:text-left">
                         <div className="flex flex-col gap-[30px]">
                             <h3 className="text-4xl font-bold">{pubkonf.title}</h3>
-                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{about.description}</p>
-                            <div>
-                                <p><i>Jelenleg nincs megjeleníthető tartalom...</i></p>
-                            </div>
+                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">{pubkonf.description}</p>
+
+                            <ScrollArea className="h-[400px]">
+                                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                    {pubkonf.items.map((item, index) => {
+                                        return (
+                                            <li
+                                                key={index}
+                                                className="bg-[#232329] py-6 px-8 rounded-xl flex flex-col justify-start items-center lg:items-start gap-2"
+                                            >
+                                                <h3 className="text-lg font-semibold text-center lg:text-left">{item.title}</h3>
+                                                {item.subtitle && (
+                                                    <p className="text-white/80 text-sm italic text-center lg:text-left">
+                                                        {item.subtitle}
+                                                    </p>
+                                                )}
+                                                <div className="flex flex-col gap-1 text-white/60 text-sm text-center lg:text-left">
+                                                    <p>{item.type} – {item.year}</p>
+                                                    <p>{item.venue}</p>
+                                                    {item.link && (
+                                                        <a
+                                                            href={item.link}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="text-accent underline"
+                                                        >
+                                                            Megnyitás
+                                                        </a>
+                                                    )}
+                                                </div>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </ScrollArea>
                         </div>
                     </TabsContent>
+
 
                 </div>
 
