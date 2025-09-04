@@ -15,13 +15,20 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Matematika Magántanár Győr - Gaál Márk</title>
+        <title>Matematika Magántanár & Webfejlesztő Győr - Gaál Márk</title>
         <meta
           name="description"
-          content="Matematika korrepetálás Győrben és online. Tapasztalt magántanár egyéni vagy csoportos oktatásra. Webfejlesztési szolgáltatások."
+          content="Gaál Márk – tapasztalt matematika magántanár és profi webfejlesztő Győrben. Egyéni és csoportos oktatás, valamint egyedi weboldalak készítése WordPress és Next.js segítségével, SEO-optimalizált és reszponzív megoldásokkal."
         />
-        <meta property="og:title" content="Matematika Magántanár Győr - Gaál Márk" />
-        <meta property="og:description" content="Matematika oktatás személyesen Győrben vagy online, valamint professzionális webfejlesztési szolgáltatások." />
+        <meta
+          name="keywords"
+          content="matematika magántanár Győr, webfejlesztő Győr, korrepetálás Győr, online oktatás, WordPress fejlesztés, Next.js weboldal, reszponzív webdesign, SEO webfejlesztés"
+        />
+        <meta property="og:title" content="Matematika Magántanár & Webfejlesztő Győr - Gaál Márk" />
+        <meta
+          property="og:description"
+          content="Tapasztalt matematika magántanár és webfejlesztő Győrben. Egyéni és csoportos oktatás, valamint profi weboldalak készítése WordPress és Next.js segítségével, SEO-optimalizált és reszponzív megoldásokkal."
+        />
         <meta property="og:image" content="/your-image-url.jpg" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
@@ -38,11 +45,22 @@ const Home = () => {
                 "https://www.linkedin.com/in/gaalmark",
                 "https://github.com/markgaal068"
               ],
-              "description": "Matematika magántanár Győrben, személyre szabott oktatás és professzionális webfejlesztés."
+              "image": "https://www.gaalmark.hu/assets/images/photo.jpg",
+              "description": "Gaál Márk – tapasztalt matematika magántanár és webfejlesztő Győrben. Egyéni és csoportos oktatás, valamint egyedi weboldalak készítése WordPress és Next.js segítségével, SEO-optimalizált és reszponzív megoldásokkal."
             })
           }}
         />
       </Head>
+
+      {/* Láthatatlan SEO-tartalom */}
+      <div className="sr-only">
+        <h2>Matematika magántanár Győr – Gaál Márk</h2>
+        <h2>Webfejlesztő Győr – Gaál Márk</h2>
+        <p>
+          Gaál Márk – tapasztalt matematika magántanár és webfejlesztő Győrben. 
+          Egyéni és csoportos oktatás, valamint profi weboldalak készítése SEO-optimalizált és reszponzív megoldásokkal.
+        </p>
+      </div>
 
       <section className="h-full">
         <div className="container mx-auto h-full">
@@ -52,9 +70,11 @@ const Home = () => {
               <h1 className="h1 mb-4">
                 Gaál <span className="text-accent">Márk</span>
               </h1>
-              <h2 className="text-xl font-semibold mb-4">Matematika magántanár & webfejlesztő</h2>
+              <h2 className="text-xl font-semibold mb-4">
+                Matematika magántanár & Webfejlesztő
+              </h2>
               <p className="max-w-[500px] mb-6 text-white/80 text-justify">
-                Egyéni matematikakorrepetálás Győrben és online, kezdőknek és haladóknak. Professzionális webfejlesztés.
+                Egyéni matematikakorrepetálás Győrben és online, kezdőknek és haladóknak. Professzionális webfejlesztés WordPress és Next.js segítségével, SEO-optimalizált és reszponzív weboldalakkal.
               </p>
 
               {/* Gombok és social ikonok */}
@@ -76,7 +96,7 @@ const Home = () => {
 
             {/* Kép */}
             <div className="order-1 xl:order-none mb-8 xl:mb-0">
-              <Photo alt="Gaál Márk - Matematika magántanár" />
+              <Photo alt="Gaál Márk – Matematika magántanár és Webfejlesztő Győr" />
             </div>
           </div>
         </div>

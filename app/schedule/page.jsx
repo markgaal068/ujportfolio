@@ -5,15 +5,17 @@ import React, { useEffect, useState, useRef } from "react";
 const events = [
   { day: "Hétfő", start: "06:00", end: "22:00", title: "Tanulmányok", color: "bg-red-500/80" },
   { day: "Kedd", start: "6:30", end: "14:00", title: "Munka", color: "bg-blue-500/80" },
+  { day: "Kedd", start: "16:00", end: "17:00", title: "Tanítás", color: "bg-green-500/80" },
   { day: "Kedd", start: "17:00", end: "22:00", title: "Kézilabda", color: "bg-yellow-500/80" },
   { day: "Szerda", start: "6:30", end: "14:00", title: "Munka", color: "bg-blue-500/80" },
   { day: "Szerda", start: "15:30", end: "21:00", title: "Tanítás", color: "bg-green-500/80" },
-  { day: "Csütörtök", start: "6:00", end: "10:00", title: "Munka", color: "bg-blue-500/80" },
-  { day: "Csütörtök", start: "11:00", end: "13:00", title: "Egyetem", color: "bg-orange-500/80" },
+  { day: "Csütörtök", start: "6:00", end: "11:00", title: "Munka", color: "bg-blue-500/80" },
+  { day: "Csütörtök", start: "12:00", end: "13:00", title: "Egyetem", color: "bg-orange-500/80" },
+  { day: "Csütörtök", start: "16:00", end: "17:00", title: "Tanítás", color: "bg-green-500/80" },
   { day: "Csütörtök", start: "17:00", end: "22:00", title: "Kézilabda", color: "bg-yellow-500/80" },
   { day: "Péntek", start: "6:00", end: "10:00", title: "Munka", color: "bg-blue-500/80" },
   { day: "Péntek", start: "11:00", end: "14:00", title: "Egyetem", color: "bg-orange-500/80" },
-  { day: "Péntek", start: "15:00", end: "18:00", title: "Tanítás", color: "bg-green-500/80" },
+  { day: "Péntek", start: "15:00", end: "20:00", title: "Tanulmányok", color: "bg-red-500/80" },
 ];
 
 const days = ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat", "Vasárnap"];
