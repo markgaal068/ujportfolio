@@ -24,7 +24,7 @@ const services = [
     {
         num: "04",
         title: "Személyi Edzés",
-        description: "Hamarosan...",
+        description: "Kondíció, koordináció fejlesztése.",
     },
 ];
 

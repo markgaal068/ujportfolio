@@ -102,8 +102,6 @@ const ServiceDetails = ({ serviceIndex }) => {
                     <h4 className="font-semibold text-xl mt-6">Kedvezmények:</h4>
                     <ul className="list-disc ml-6 mt-2">
                         <li><strong>Csoportos oktatás:</strong> 10% kedvezmény diákonként.</li>
-                        <li><strong>Havi bérlet (4 alkalom):</strong> 5% kedvezmény.</li>
-                        <li><strong>10 alkalmas bérlet:</strong> 10% kedvezmény.</li>
                         <li><strong>SNI diákok, egyedülálló szülők gyermekei:</strong> egyedi kedvezmény e-mailes egyeztetéssel.</li>
                     </ul>
 

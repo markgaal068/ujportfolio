@@ -18,7 +18,7 @@ const projects = [
     {
         num: '01',
         category: 'Ácsi Kinizsi SC.',
-        title: 'Szakdolgozat',
+        title: 'Szakdolgozat projektje',
         description: "Szakdolgozatom projektje, sportegyesület weboldala",
         stack: [{ name: "Next.Js" }, { name: "Node.Js" }, { name: "MongoDB" }],
         image: "/assets/work/kinizsimockup.png",
@@ -37,12 +37,23 @@ const projects = [
     },
     {
         num: '03',
-        category: 'Python Projekt',
-        title: 'Árfolyam-követő',
+        category: 'Édenkapu fagyizó',
+        title: 'weboldala',
+        description: "Győri Édenkapu fagyizó webshopja",
+        stack: [{ name: "Next.js" }],
+        image: '/assets/work/edenkapumockup.png',
+        live: "https://www.edenkapu.hu/",
+        github: "https://github.com/markgaal068/edenkapu",
+    },
+    {
+        num: '04',
+        category: 'Baubla',
+        title: 'Építőipari webshop',
         description: "Valuta- és Kriptopénz árfolyam-követő, automatizált program",
-        stack: [{ name: "Python" }],
-        image: '/assets/work/thumb3.png',
-        github: "https://github.com/markgaal068/Currency-Tracker-Python",
+        stack: [{ name: "Wordpress" }],
+        image: '/assets/work/baublamockup.png',
+        live: "https://baubla.com/",
+        github: "",
     },
 ];
 
