@@ -14,7 +14,8 @@ const services = [
     {
         num: "02",
         title: "Korrepetálás",
-        description: "Korrepetálás áraival kapcsolatos részletek.",
+        /* description: "Korrepetálás áraival kapcsolatos részletek.", */
+        description: "Jelenleg nem elérhető.",
     },
     {
         num: "03",

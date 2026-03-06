@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaDiscord } from 'react-icons/fa'
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaDiscord, } from 'react-icons/fa'
 import { motion } from "framer-motion"
 import axios from 'axios';
 
@@ -22,7 +22,7 @@ const info = [
     {
         icon: <FaMapMarkerAlt />,
         title: 'Cím',
-        description: "Győr",
+        description: "SZE - A602",
     },
 ]
 
@@ -86,6 +86,8 @@ const Contact = () => {
                                         <SelectItem value="web">Webfejlesztés</SelectItem>
                                         <SelectItem value="kor">Matematika korrepetáció</SelectItem>
                                         <SelectItem value="mod">3D modellezés</SelectItem>
+                                        <SelectItem value="edz">Személyi edzés</SelectItem>
+                                        <SelectItem value="sze">Egyetemi ügyintézés</SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>

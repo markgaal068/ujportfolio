@@ -48,8 +48,8 @@ const projects = [
     {
         num: '04',
         category: 'Baubla',
-        title: 'Építőipari webshop',
-        description: "Valuta- és Kriptopénz árfolyam-követő, automatizált program",
+        title: 'Élelmiszer webshop',
+        description: "Megrendelésre készülő webshop.",
         stack: [{ name: "Wordpress" }],
         image: '/assets/work/baublamockup.png',
         live: "https://baubla.com/",

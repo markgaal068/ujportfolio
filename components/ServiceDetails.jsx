@@ -54,7 +54,8 @@ const ServiceDetails = ({ serviceIndex }) => {
         case 1:
             return (
                 <div className="bg-primary border border-accent text-white p-6 mt-6 rounded-lg shadow-2xl">
-                    <h3 className="font-bold text-2xl">Korrepetálási Díjak – 2025</h3>
+                    <h3 className="font-bold text-2xl">Jelenleg nem elérhető.</h3>
+{/*                     <h3 className="font-bold text-2xl">Korrepetálási Díjak – 2025</h3>
                     <p className="mt-4">
                         Az alábbi díjak 45 perces tanórákra vonatkoznak. Lehetőség van online és személyes oktatásra is. Személyes oktatás Győrben és környékén érhető el, külön kiszállási díjjal.
                     </p>
@@ -111,7 +112,7 @@ const ServiceDetails = ({ serviceIndex }) => {
 
                     <p className="mt-4">
                         Ha az e-mailes megkeresésre három munkanapon belül nem kap választ, kérem, hívjon telefonon a <strong>+36304199942</strong> számon.
-                    </p>
+                    </p> */}
                 </div>
             );
 

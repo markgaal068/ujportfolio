@@ -14,6 +14,30 @@ const pubkonf = {
     description: "Megjelent tanulmányok, konferencia-előadások és kutatási kiadványok.",
     items: [
         {
+            title: "Fenntarthatóság és játékosítás - Egyéni érdekek, közös célok ",
+            subtitle: "Absztraktkötet",
+            type: "Tanulmány",
+            venue: "XXI. OGIK Országos Gazdaságinformatikai Konferencia",
+            year: "2025",
+            link: "https://konferencia.unideb.hu/sites/default/files/upload_documents/absztraktkotet_ogik2025_0.pdf"
+        },
+        {
+            title: "COS2025 ",
+            subtitle: "Fenntarthatósági konferencia",
+            type: "Tanulmány",
+            venue: "Széchenyi István Egyetem, Győr",
+            year: "2025",
+            link: "https://cos.sze.hu/home"
+        },
+        {
+            title: "XXI. OGIK Országos Gazdaságinformatikai Konferencia ",
+            subtitle: "Konferencia",
+            type: "Tanulmány",
+            venue: "Debreceni Egyetem, Debrecen",
+            year: "2025",
+            link: ""
+        },
+        {
             title: "A neurális hálózatok fejlődése és alkalmazása a modern mesterséges intelligenciában ",
             subtitle: "Smart Law Research Group – Working Paper No. 2 (2025)",
             type: "Tanulmány",
@@ -79,14 +103,19 @@ const experience = {
     description: "Szakmai tapasztalataim bemutatása, kiemelve a különböző pozíciókat és az iparágakat, ahol dolgoztam. Bővebb információ a részletesn önéletrajzomban.",
     items: [
         {
+            company: "Széchenyi István Egyetem",
+            position: "Tanszéki mérnök",
+            duration: "2026 - "
+        },
+        {
             company: "Avatao Innovative Learning Kft.",
             position: "Engineering support",
-            duration: "2025-Present "
+            duration: "2025 - 2026 "
         },
         {
             company: "Széchenyi István Egyetem",
             position: "Külsős szakértő",
-            duration: "2024-Present "
+            duration: "2024 - 2026"
         },
         {
             company: "Stäubli Robotics",
@@ -96,7 +125,7 @@ const experience = {
         {
             company: " Mobilis ",
             position: "Demonstrátor",
-            duration: "2022-2023"
+            duration: "2022 - 2023"
         },
         {
             company: "MetMax Europe ",
@@ -106,12 +135,12 @@ const experience = {
         {
             company: "Freelancer",
             position: "EV.",
-            duration: "2021-Present"
+            duration: "2021 - Present"
         },
         {
             company: "McDonald’s Corp",
             position: "Éttermi munkatárs",
-            duration: "2017-2022"
+            duration: "2017 - 2022"
         },
     ]
 }
@@ -124,6 +153,11 @@ const education = {
     description: "Szakmai és oktatási hátterem bemutátsa, programozás és a sport területén szerzett tapasztalataim. Bővebb információ a részletes önéletrajzomban.",
     items: [
         {
+            institution: "Széchenyi István Egyetem",
+            degree: "Gazdaságinformatikus MSc.",
+            duration: "2026 - "
+        },
+        {
             institution: "Testnevelési Egyetem",
             degree: "Kézilabda edző (C licence)",
             duration: "2025 - "
@@ -135,8 +169,8 @@ const education = {
         },
         {
             institution: "Széchenyi István Egyetem",
-            degree: "Mérnökinformatika Bsc.",
-            duration: "2021 - "
+            degree: "Mérnökinformatikus BSc.",
+            duration: "2021 - 2026"
         },
         {
             institution: "GYSZC Jedlik Ányos Technikum",
@@ -350,19 +384,19 @@ const Resume = () => {
                             <div className="italic">
                                 <h3 className="text-2xl font-bold">Szia, üdvözöllek!</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify">
-                                    Márk vagyok, a Széchenyi István Egyetem Mérnökinformatika BSc hallgatója. Középiskolás éveim óta foglalkozom programozással, azóta folyamatosan bővítem tudásomat.
+                                    Márk vagyok, tanszéki mérnök a Széchenyi István Egyetemen. Az oktatás és az informatika világa már régóta meghatározó szerepet tölt be az életemben, ezért nagy öröm számomra, hogy több különböző tárgy oktatásában is részt vehetek.
                                 </p>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
-                                    Az informatika világa mindig is lenyűgözött, jelenleg főként a fullstack fejlesztés és a mesterséges intelligencia területei érdekelnek. Terveim között szerepel Mérnökinformatika MSc és Kiberbiztonság MSc végzettségek megszerzése is.
+                                    Tanulmányaimat Mérnökinformatikus BSc szakon végeztem, jelenleg pedig Gazdaságinformatikus MSc képzésben folytatom tanulmányaimat. Tudományos érdeklődésem és szakmai fejlődésem következő lépéseként jövőre kezdem meg PhD tanulmányaimat.
                                 </p>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
-                                    A sport szintén fontos része az életemnek: 2010 óta kézilabdázom, és az évek során megtanultam, hogy a kitartás, a csapatmunka és a fejlődés iránti vágy az élet minden területén kulcsszerepet játszik.
+                                    Oktatói munkám során fontosnak tartom, hogy a hallgatók ne csak elméleti tudást szerezzenek, hanem gyakorlati, a való életben is hasznosítható készségeket is fejlesszenek. Az informatika gyorsan változó terület, ezért folyamatosan törekszem arra, hogy naprakész tudást adjak át.
                                 </p>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
-                                    Szabadidőmben szívesen olvasok IT témájú és fantasy könyveket, és mindig keresem az új kihívásokat, amelyek segítenek fejlődni szakmailag és emberileg is.
+                                    Szabadidőmben szívesen foglalkozom új technológiák megismerésével, kutatással és szakmai projektek fejlesztésével. Hiszek abban, hogy az élethosszig tartó tanulás és a kíváncsiság kulcsfontosságú a szakmai fejlődésben.
                                 </p>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify mt-4">
-                                    Hosszú távú célom saját vállalkozás létrehozása, valamint olyan projektekben való részvétel, amelyek szakmai és társadalmi értéket is teremtenek. Ha kíváncsi vagy a munkáimra vagy együttműködnél velem, keress bátran!
+                                    Célom, hogy oktatóként és kutatóként is hozzájáruljak az informatika területének fejlődéséhez, valamint inspiráljam a jövő szakembereit az innovációra és a folyamatos fejlődésre.
                                 </p>
                             </div>
                         </div>
